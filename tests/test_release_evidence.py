@@ -69,8 +69,8 @@ def test_dev_lock_is_exact_and_core_has_no_runtime_dependency():
             current = ""
     assert requirements and not current
     assert all("==" in item and "--hash=sha256:" in item for item in requirements)
-    assert any(item.startswith("setuptools==75.1.0 ") for item in requirements)
-    assert any(item.startswith("wheel==0.44.0 ") for item in requirements)
+    assert any(item.startswith("setuptools==84.2.1 ") for item in requirements)
+    assert any(item.startswith("wheel==0.48.0 ") for item in requirements)
     pyproject = (ROOT / "pyproject.toml").read_text(encoding="utf-8")
     assert "dependencies = []" in pyproject
 
