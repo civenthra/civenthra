@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "release_policy": "deny_unless_explicitly_included",
+  "scope_note": "This ledger governs public repository and demo distribution, not private reading or local indexing.",
+  "catalog_defaults": {
+    "source_text": "excluded_unreviewed",
+    "translation": "excluded_unreviewed",
+    "audio": "excluded_unreviewed",
+    "video": "excluded_unreviewed",
+    "voice_or_likeness": "excluded_unreviewed"
+  },
+  "catalog_book_nos": [
+    937, 456, 711, 1881, 1880, 9002,
+    321, 323, 708, 706, 707, 339, 710, 336,
+    425, 289, 285, 291, 254, 426, 723, 724,
+    9001, 437, 1163, 649, 1020, 1021, 260, 301, 845, 206, 651,
+    46, 48, 53, 538, 1029, 718, 762, 763, 461, 2, 1070,
+    314, 401, 716, 717, 1055, 472, 477, 245
+  ],
+  "overrides": [],
+  "public_assets": [
+    {
+      "asset_id": "catalog-metadata",
+      "asset_type": "project_metadata",
+      "paths": ["canon/canon.json", "canon/文明穹顶书目.md"],
+      "status": "included_noncontent",
+      "basis": "Bibliographic facts and project-authored selection notes only; no book text or translation is included.",
+      "repository_license": "Apache-2.0",
+      "last_technical_review": "2026-11-04"
+    },
+    {
+      "asset_id": "avatar-placeholder-doc",
+      "asset_type": "documentation",
+      "paths": ["assets/avatar/README.md"],
+      "status": "included_noncontent",
+      "basis": "Documentation placeholder only; no portrait, biometric template, model, or generated avatar is included.",
+      "repository_license": "Apache-2.0",
+      "last_technical_review": "2026-11-04"
+    },
+    {
+      "asset_id": "repository-policy-schemas",
+      "asset_type": "project_metadata",
+      "paths": [
+        "canon/graph_schema.json",
+        "canon/rights-manifest.json",
+        "canon/safety-reviews.json",
+        "release-manifest.txt"
+      ],
+      "status": "included_noncontent",
+      "basis": "Project-authored schemas and deny-by-default policy records; no source book text or translation is included.",
+      "repository_license": "Apache-2.0",
+      "last_technical_review": "2026-11-05"
+    },
+    {
+      "asset_id": "synthetic-golden-corpus",
+      "asset_type": "synthetic_text",
+      "paths": ["examples/synthetic_corpus.json", "examples/synthetic_demo.py"],
+      "status": "approved",
+      "license_or_permission": "Original project-authored synthetic material released under Apache-2.0",
+      "evidence_uri": "canon/rights-manifest.json#synthetic-golden-corpus",
+      "territories": ["worldwide"],
+      "reviewed_by": "repository maintainer",
+      "reviewed_at": "2026-11-05"
+    }
+  ]
+}

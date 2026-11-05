@@ -1,0 +1,23 @@
+{
+  "books_library": "E:/path/to/books/library/books",
+  "model_root": "E:/path/to/models",
+  "llama_server": "C:/path/to/llama-server.exe",
+  "port": 0,
+  "embed_port": 0,
+  "safety_review_file": "canon/safety-reviews.json",
+  "authorization_file": "E:/path/to/private/authorizations.local.json",
+  "deployment_territory": "replace-with-ISO-3166-1-alpha-2",
+  "voice_python": "C:/path/to/python.exe",
+  "xiaoya_ref_wav": "E:/path/to/authorized/private/reference.wav",
+  "avatar_backend": "local",
+  "avatar_source": "E:/path/to/SoulX-FlashHead",
+  "avatar_models": "E:/path/to/avatar/models",
+  "avatar_python": "E:/path/to/avatar-venv/Scripts/python.exe",
+  "avatar_portrait": "E:/path/to/private/portrait.png",
+  "scene_backend": "disabled",
+  "h3_python": "C:/path/to/h3-venv/Scripts/python.exe",
+  "h3_wangp_root": "E:/path/to/WanGP",
+  "h3_config_dir": "E:/path/to/h3/config",
+  "h3_settings_dir": "E:/path/to/h3/settings",
+  "h3_output_dir": "E:/path/to/private/generated-scenes"
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "records": {
+    "minimax-h3": {
+      "authorization_id": "replace-with-local-review-id",
+      "component": "minimax-h3",
+      "status": "pending",
+      "subject_id": "minimax-h3-reviewed-release",
+      "scopes": ["local-educational-scene-generation"],
+      "territories": ["replace-with-deployment-territory"],
+      "constraints": ["territory-reviewed", "no-redistribution"],
+      "license": {
+        "name": "MiniMax Model Community License",
+        "version": "replace-with-reviewed-version",
+        "source_uri": "https://github.com/MiniMax-AI/MiniMax-H3",
+        "sha256": "replace-with-sha256-of-reviewed-license-text"
+      },
+      "reviewer_id": "replace-with-local-reviewer-id",
+      "reviewed_on": "1970-01-01",
+      "expires_on": "1970-01-01",
+      "evidence_ref": "replace-with-private-evidence-reference"
+    },
+    "xtts-v2-voice-cloning": {
+      "authorization_id": "replace-with-local-consent-id",
+      "component": "xtts-v2-voice-cloning",
+      "status": "pending",
+      "subject_id": "replace-with-pseudonymous-authorized-voice-id",
+      "scopes": ["local-noncommercial-voice-cloning"],
+      "territories": ["replace-with-deployment-territory"],
+      "constraints": ["non-commercial", "no-redistribution"],
+      "license": {
+        "name": "Coqui Public Model License 1.0.0",
+        "version": "1.0.0",
+        "source_uri": "https://huggingface.co/coqui/XTTS-v2/blob/main/LICENSE.txt",
+        "sha256": "replace-with-sha256-of-reviewed-license-text"
+      },
+      "input_sha256": "replace-with-sha256-of-authorized-reference-audio",
+      "reviewer_id": "replace-with-local-reviewer-id",
+      "reviewed_on": "1970-01-01",
+      "expires_on": "1970-01-01",
+      "evidence_ref": "replace-with-private-consent-evidence-reference"
+    }
+  }
+}

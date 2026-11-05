@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "pilot_books": [937, 711, 708, 291, 260, 301, 48, 314],
+  "predicates": ["defines", "describes", "requires", "argues", "supports", "opposes", "step_before", "has_risk"],
+  "concepts": [
+    {"id":"ventilation","label":"通风","sense":"环境与空气交换","aliases":["通风","ventilation"],"books":[937,1880,710]},
+    {"id":"sanitation","label":"卫生","sense":"环境卫生与历史照护","aliases":["卫生","sanitation","cleanliness"],"books":[937,1880,710,9002]},
+    {"id":"food_preservation","label":"食物保存","sense":"食品保存工艺，不是一般哲学意义的保存","aliases":["食品保存","食物保存","密封","罐藏","preservation","canning"],"books":[711,1881]},
+    {"id":"sterilization","label":"杀菌","sense":"食品加工的历史主张，加热不直接等同杀菌","aliases":["杀菌","灭菌","sterilization"],"books":[711,1881]},
+    {"id":"heating","label":"加热","sense":"食品处理方法，不自动推出杀菌效果","aliases":["加热","水浴","煮沸","heating","boiling"],"books":[711,1881]},
+    {"id":"electricity","label":"电","sense":"电学现象","aliases":["电学","电气","电流","electricity","electrical"],"books":[708,323]},
+    {"id":"experiment","label":"实验","sense":"经验科学中的实验","aliases":["实验","experiment"],"books":[708,291,437]},
+    {"id":"heat_work","label":"热与功","sense":"热动力学中的热功关系","aliases":["热","动力","heat","work"],"books":[321]},
+    {"id":"hypothesis","label":"科学假设","sense":"科学解释与检验中的假设","aliases":["假设","hypothesis","hypotheses"],"books":[291,437]},
+    {"id":"scientific_reasoning","label":"科学论证","sense":"科学知识形成的论证","aliases":["推理","论证","证明","reasoning","proof"],"books":[291,437,289]},
+    {"id":"feedback","label":"反馈","sense":"控制论中的反馈","aliases":["反馈","feedback"],"books":[260]},
+    {"id":"control","label":"控制","sense":"控制系统，不指政治控制","aliases":["控制","control"],"books":[260]},
+    {"id":"communication","label":"通信","sense":"通信系统中的信息传递","aliases":["通信","通讯","communication"],"books":[301,260]},
+    {"id":"signal","label":"信号","sense":"通信与控制系统中的信号，不等于通信过程","aliases":["信号","signal"],"books":[301,260]},
+    {"id":"information_shannon","label":"信息量","sense":"香农通信理论的技术含义","aliases":["信息","information"],"books":[301]},
+    {"id":"entropy_shannon","label":"信息熵","sense":"通信理论中的熵，不能直接等同热力学熵","aliases":["熵","entropy"],"books":[301]},
+    {"id":"encoding","label":"编码","sense":"通信系统的编码","aliases":["编码","code","coding","encoding"],"books":[301]},
+    {"id":"consent","label":"同意","sense":"政治合法性中的同意","aliases":["同意","consent"],"books":[48]},
+    {"id":"property","label":"财产","sense":"政治与权利论述中的财产","aliases":["财产","property"],"books":[48]},
+    {"id":"liberty","label":"自由","sense":"政治自由与权利，不等同物理自由度","aliases":["自由","liberty","freedom"],"books":[48,53]},
+    {"id":"labor","label":"劳动","sense":"车间与组织中的劳动活动","aliases":["劳动","labor","labour"],"books":[314,1070]},
+    {"id":"worker","label":"工人","sense":"生产组织的人员，不等同劳动活动","aliases":["工人","workmen","worker","workers"],"books":[314,1070]},
+    {"id":"standardization","label":"标准化","sense":"生产组织中的方法标准化，不自动等同效率","aliases":["标准化","standardization"],"books":[314,1070]},
+    {"id":"efficiency","label":"效率","sense":"生产组织中的效率，不自动证明采用标准化","aliases":["效率","efficiency"],"books":[314,1070]},
+    {"id":"syllogism","label":"三段论","sense":"形式逻辑中的三段论","aliases":["三段论","syllogism"],"books":[9001]},
+    {"id":"geometry","label":"几何","sense":"欧几里得几何","aliases":["几何","geometry","triangle","三角形"],"books":[425]}
+  ]
+}

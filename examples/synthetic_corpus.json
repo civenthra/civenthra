@@ -1,0 +1,18 @@
+[
+  {
+    "no": 10001,
+    "title": "Habitat Charter / 栖居地章程",
+    "author": "Civenthra contributors",
+    "chapter": "Public decisions / 公共决定",
+    "lang": "en",
+    "text": "A fictional habitat council records each shared-resource decision, the evidence considered, the dissenting view, and the date for review. 这个虚构栖居地议事会记录每项公共资源决定、采用的证据、反对意见以及复核日期。"
+  },
+  {
+    "no": 10002,
+    "title": "Learning Log / 学习日志",
+    "author": "Civenthra contributors",
+    "chapter": "Evidence trail / 证据链",
+    "lang": "zh",
+    "text": "每条课程结论都附上本地证据编号、内容版本和复核状态。A learner can follow the local evidence identifier, content version, and review status behind every lesson claim."
+  }
+]

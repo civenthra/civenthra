@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use Civenthra in research or education, please cite this software."
+title: "Civenthra: a local-first source-grounded offline knowledge prototype"
+type: software
+authors:
+  - name: "Civenthra Maintainers"
+repository-code: "https://github.com/civenthra/civenthra"
+url: "https://github.com/civenthra/civenthra"
+license: Apache-2.0
+version: 0.1.0

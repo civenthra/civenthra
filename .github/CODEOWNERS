@@ -1,0 +1,9 @@
+* @stonestorm2024
+
+# Release, rights, security, and governance boundaries always require owner review.
+/.github/ @stonestorm2024
+/canon/ @stonestorm2024
+/scripts/ @stonestorm2024
+/SECURITY.md @stonestorm2024
+/GOVERNANCE.md @stonestorm2024
+/THIRD_PARTY_NOTICES.md @stonestorm2024

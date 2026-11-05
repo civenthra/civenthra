@@ -1,0 +1,6 @@
+{
+  "schema": 1,
+  "policy": "deny_high_risk_instructions_without_current_expert_review",
+  "reviews": [],
+  "note": "Keep reviewer evidence private when necessary and point config.local.json to a separate local registry. Never mark historical material current without qualified domain review."
+}
