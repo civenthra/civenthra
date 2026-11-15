@@ -265,6 +265,8 @@ def harvest_oai(source: dict, destination: Path, *, limit: int = 100,
             while pages < max_pages and (limit == 0 or count < limit):
                 query = ({"verb": "ListRecords", "resumptionToken": token} if token else
                          {"verb": "ListRecords", "metadataPrefix": source["catalog_format"]})
+                if not token and source.get("oai_set"):
+                    query["set"] = source["oai_set"]
                 url = source["catalog_url"] + ("&" if "?" in source["catalog_url"] else "?")
                 url += urllib.parse.urlencode(query)
                 if not host_allowed(url, source["allowed_hosts"]):
@@ -309,6 +311,8 @@ def harvest_oai(source: dict, destination: Path, *, limit: int = 100,
         "rights_status": "metadata_only_not_content_clearance",
         "records": count,
         "pages": pages,
+        "bytes": destination.stat().st_size,
+        "sha256": _file_sha256(destination),
         "downloaded_at": datetime.now(timezone.utc).isoformat(),
         "path": str(destination),
     }

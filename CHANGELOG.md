@@ -7,6 +7,19 @@ Versioning after the first public release.
 
 ### Added
 
+- Opt-in live metadata verification for every public registry entry, with
+  format, content, and SHA-256 receipt checks and a dated result record.
+- Historical source and STEM method inventory distinguishing original project
+  evidence from current executable public adapters.
+
+### Fixed
+
+- DOAB OAI request endpoint, NCBI `nbk_meta` metadata format, and Wikisource
+  latest checksum manifest endpoints after live tests found failures.
+- OpenEdition Books now filters by the `books` set; OAI receipts include hashes.
+
+### Added (collection)
+
 - Public, credential-free source registry for Project Gutenberg, DOAB,
   OpenEdition Books, NCBI Bookshelf, public Internet Archive items, and English
   and Chinese Wikisource dumps.

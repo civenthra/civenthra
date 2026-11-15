@@ -27,6 +27,10 @@ CONTRIBUTING.zh-CN.md
 CODE_OF_CONDUCT.md
 docs/ARCHITECTURE.md
 docs/COLLECTION.md
+docs/COLLECTION_LIVE_CHECK.md
+docs/HISTORICAL_SOURCES.md
+docs/historical_sources.json
+docs/stem_seeds.json
 docs/OPEN_SOURCE_READINESS.md
 docs/RELEASE_CHECKLIST.md
 docs/SAFETY_MODEL.md
@@ -75,6 +79,7 @@ scripts/audit_archive.py
 scripts/build_checksums.py
 scripts/build_sbom.py
 scripts/git_history_audit.py
+scripts/live_collection_smoke.py
 scripts/open_source_audit.py
 scripts/validate_rights.py
 SECURITY.md

@@ -90,6 +90,10 @@ credentials*.json
 !/docs/ARCHITECTURE.md
 !/docs/RELEASE_CHECKLIST.md
 !/docs/COLLECTION.md
+!/docs/COLLECTION_LIVE_CHECK.md
+!/docs/HISTORICAL_SOURCES.md
+!/docs/historical_sources.json
+!/docs/stem_seeds.json
 /examples/**
 !/examples/synthetic_corpus.json
 !/examples/synthetic_demo.py
@@ -102,6 +106,7 @@ credentials*.json
 !/scripts/audit_archive.py
 !/scripts/restore_avatar_models.py
 !/scripts/media_integrity.py
+!/scripts/live_collection_smoke.py
 /tests/**
 !/tests/test_open_source_audit.py
 !/tests/test_scene_backend.py

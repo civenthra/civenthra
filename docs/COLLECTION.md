@@ -26,11 +26,30 @@ The built-in registry currently documents:
 | OpenEdition Books | OAI-PMH | Metadata first; verify the publication's access and license separately. |
 | NCBI Bookshelf | OAI-PMH | Full text exists only for a subset; review each rights notice. |
 | Internet Archive | Advanced Search metadata | Reject dark, restricted, lending-only, print-disabled, encrypted, LCP, and DRM files. |
-| English/Chinese Wikisource | Official Wikimedia dump manifests | Review work status and contribution licensing; preserve attribution. |
+| English/Chinese Wikisource | Official Wikimedia latest MD5 file manifests | Discover dump filenames; review work status and contribution licensing; preserve attribution. |
 
 `civenthra/public_sources.json` records the official homepage, catalog endpoint,
 rights policy, automation policy, allowed hosts, and rate limit for each source.
 A registry entry is not a blanket copyright decision.
+
+The historical project used additional channels and a STEM selection profile.
+See [the historical inventory](HISTORICAL_SOURCES.md) for their methods and actual
+integration status. Historical documentation does not imply an executable adapter.
+
+原工程使用过的其他渠道及 STEM 专项方法见[历史来源清单](HISTORICAL_SOURCES.md)。
+清单逐项区分实际使用证据、发现方法和当前公共版适配状态。
+
+## Live verification / 真实联网验收
+
+Run `python scripts/live_collection_smoke.py` explicitly to check every registered
+metadata source. This downloads bounded metadata, validates its format and SHA-256
+receipts, and saves evidence to a unique system temporary directory. It exits with
+a failure status if any source fails. Do not run live checks implicitly in CI.
+See [the dated verification record](COLLECTION_LIVE_CHECK.md) for results and scope.
+
+运行 `python scripts/live_collection_smoke.py` 可逐个验收全部已注册入口，检查真实返回
+内容、格式和哈希回执；证据保存至独立临时目录。任一入口失败即返回失败状态。
+此测试验证元数据入口；正文下载、转储解析和翻译另行验收。
 
 ## Workflow / 工作流
 

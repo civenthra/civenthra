@@ -1,12 +1,14 @@
+import hashlib
 import io
 import json
 import urllib.request
+from urllib.parse import parse_qs, urlsplit
 
 import pytest
 
 from civenthra.collect import (CollectionError, GuardedRedirectHandler,
                                download_url, fetch_manifest, harvest_oai)
-from civenthra.sources import load_registry
+from civenthra.sources import SourceRegistryError, load_registry, validate_registry
 
 
 class FakeResponse:
@@ -141,7 +143,43 @@ def test_oai_harvest_writes_normalized_metadata_and_receipt(tmp_path):
     assert record["metadata"]["title"] == ["Synthetic Book"]
     assert record["metadata"]["rights"] == ["CC0"]
     assert receipt["records"] == 1
+    assert receipt["bytes"] == target.stat().st_size
+    assert receipt["sha256"] == hashlib.sha256(target.read_bytes()).hexdigest()
     assert target.with_name("records.jsonl.receipt.json").is_file()
+
+
+def test_oai_set_is_used_only_on_initial_request(tmp_path):
+    source = {
+        "id": "test-oai", "catalog_url": "https://catalog.example/oai",
+        "catalog_format": "oai_dc", "oai_set": "books",
+        "allowed_hosts": ["catalog.example"], "rate_limit_seconds": 0,
+    }
+    page = b"""<OAI-PMH xmlns='http://www.openarchives.org/OAI/2.0/'>
+      <ListRecords><record><header><identifier>synthetic</identifier></header></record>
+      <resumptionToken>NEXT_TOKEN</resumptionToken></ListRecords></OAI-PMH>"""
+    opener = FakeOpener([
+        FakeResponse(page.replace(b"NEXT_TOKEN", b"next:2&amp;3"), source["catalog_url"]),
+        FakeResponse(page.replace(b"NEXT_TOKEN", b""), source["catalog_url"]),
+    ])
+    receipt = harvest_oai(source, tmp_path / "records.jsonl", limit=3, max_pages=2,
+                          opener=opener, sleep=lambda _: None)
+    queries = [parse_qs(urlsplit(url).query) for url, _ in opener.requests]
+    assert queries == [
+        {"verb": ["ListRecords"], "metadataPrefix": ["oai_dc"], "set": ["books"]},
+        {"verb": ["ListRecords"], "resumptionToken": ["next:2&3"]},
+    ]
+    assert receipt["records"] == 2
+
+
+@pytest.mark.parametrize("adapter,value", [
+    ("oai-pmh", ""), ("oai-pmh", "  "), ("oai-pmh", 42), ("snapshot", "books"),
+])
+def test_registry_rejects_invalid_oai_set(adapter, value):
+    registry = load_registry()
+    source = registry["sources"][0]
+    source.update(adapter=adapter, oai_set=value)
+    with pytest.raises(SourceRegistryError, match="oai_set"):
+        validate_registry(registry)
 
 
 def test_reviewed_batch_resumes_only_when_file_matches_receipt(tmp_path):

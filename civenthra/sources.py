@@ -11,9 +11,9 @@ DEFAULT_REGISTRY = Path(__file__).with_name("public_sources.json")
 SOURCE_FIELDS = {
     "id", "name", "homepage", "catalog_url", "adapter", "catalog_format",
     "rights_policy_url", "automation_policy_url", "content_access",
-    "allowed_hosts", "rate_limit_seconds", "item_level_rights_review", "notes",
+    "allowed_hosts", "rate_limit_seconds", "item_level_rights_review", "notes", "oai_set",
 }
-REQUIRED_SOURCE_FIELDS = SOURCE_FIELDS - {"notes"}
+REQUIRED_SOURCE_FIELDS = SOURCE_FIELDS - {"notes", "oai_set"}
 ADAPTERS = {"snapshot", "oai-pmh"}
 RIGHTS_BASES = {"public-domain", "open-license", "explicit-permission"}
 FORBIDDEN_KEY_PARTS = {"cookie", "credential", "password", "secret", "token", "api_key"}
@@ -84,6 +84,10 @@ def validate_registry(payload: object) -> dict:
             _https(source[field], f"{source_id}.{field}")
         if source["adapter"] not in ADAPTERS:
             raise SourceRegistryError(f"unsupported adapter for {source_id}")
+        if "oai_set" in source:
+            if (source["adapter"] != "oai-pmh" or not isinstance(source["oai_set"], str)
+                    or not source["oai_set"].strip()):
+                raise SourceRegistryError(f"oai_set must be a non-empty OAI-PMH set for {source_id}")
         hosts = source["allowed_hosts"]
         if (not isinstance(hosts, list) or not hosts
                 or any(not isinstance(host, str) or host != host.lower() for host in hosts)):

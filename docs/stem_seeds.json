@@ -1,0 +1,3229 @@
+{
+  "schema": 1,
+  "reviewed_on": "2026-11-15",
+  "evidence": "books/tools/stem_seeds.py:SEEDS_STEM,SEEDS_STEM_3",
+  "extraction": "AST literal evaluation only; historical script not imported or executed",
+  "definition_counts": {
+    "SEEDS_STEM": 560,
+    "SEEDS_STEM_3": 243
+  },
+  "definitions_total": 803,
+  "unique_pair_count": 803,
+  "labels_language": "zh",
+  "queries_language": "en",
+  "dedup_rule": "Exact (label, query) pair; distinct subject labels remain even if query text matches",
+  "seeds": [
+    [
+      "STEM·数学·数学总论",
+      "mathematics"
+    ],
+    [
+      "STEM·数学·微积分",
+      "calculus"
+    ],
+    [
+      "STEM·数学·微分方程",
+      "differential equations"
+    ],
+    [
+      "STEM·数学·代数",
+      "algebra"
+    ],
+    [
+      "STEM·数学·线性代数",
+      "matrices"
+    ],
+    [
+      "STEM·数学·几何",
+      "geometry"
+    ],
+    [
+      "STEM·数学·解析几何",
+      "geometry, analytic"
+    ],
+    [
+      "STEM·数学·投影几何",
+      "geometry, projective"
+    ],
+    [
+      "STEM·数学·三角学",
+      "trigonometry"
+    ],
+    [
+      "STEM·数学·数论",
+      "number theory"
+    ],
+    [
+      "STEM·数学·概率论",
+      "probabilities"
+    ],
+    [
+      "STEM·数学·统计学",
+      "mathematical statistics"
+    ],
+    [
+      "STEM·数学·数学分析",
+      "mathematical analysis"
+    ],
+    [
+      "STEM·数学·函数论",
+      "functions"
+    ],
+    [
+      "STEM·数学·拓扑学",
+      "topology"
+    ],
+    [
+      "STEM·数学·集合论",
+      "set theory"
+    ],
+    [
+      "STEM·数学·数值分析",
+      "numerical analysis"
+    ],
+    [
+      "STEM·数学·组合数学",
+      "combinatorial analysis"
+    ],
+    [
+      "STEM·数学·数学史",
+      "mathematics history"
+    ],
+    [
+      "STEM·数学·数学物理",
+      "mathematical physics"
+    ],
+    [
+      "STEM·数学·博弈论",
+      "game theory"
+    ],
+    [
+      "STEM·物理·物理学总论",
+      "physics"
+    ],
+    [
+      "STEM·物理·力学",
+      "mechanics"
+    ],
+    [
+      "STEM·物理·固体力学",
+      "mechanics, applied"
+    ],
+    [
+      "STEM·物理·流体力学",
+      "fluid mechanics"
+    ],
+    [
+      "STEM·物理·热力学",
+      "thermodynamics"
+    ],
+    [
+      "STEM·物理·统计力学",
+      "statistical mechanics"
+    ],
+    [
+      "STEM·物理·光学",
+      "optics"
+    ],
+    [
+      "STEM·物理·声学",
+      "sound"
+    ],
+    [
+      "STEM·物理·电学",
+      "electricity"
+    ],
+    [
+      "STEM·物理·磁学",
+      "magnetism"
+    ],
+    [
+      "STEM·物理·电磁理论",
+      "electromagnetic theory"
+    ],
+    [
+      "STEM·物理·原子物理",
+      "atomic theory"
+    ],
+    [
+      "STEM·物理·量子理论",
+      "quantum theory"
+    ],
+    [
+      "STEM·物理·相对论",
+      "relativity"
+    ],
+    [
+      "STEM·物理·核物理",
+      "nuclear physics"
+    ],
+    [
+      "STEM·物理·粒子物理",
+      "particles (nuclear physics)"
+    ],
+    [
+      "STEM·物理·天体物理",
+      "astrophysics"
+    ],
+    [
+      "STEM·物理·地球物理",
+      "geophysics"
+    ],
+    [
+      "STEM·物理·物理史",
+      "physics history"
+    ],
+    [
+      "STEM·物理·实验物理",
+      "physics experiments"
+    ],
+    [
+      "STEM·化学·化学总论",
+      "chemistry"
+    ],
+    [
+      "STEM·化学·无机化学",
+      "chemistry, inorganic"
+    ],
+    [
+      "STEM·化学·有机化学",
+      "chemistry, organic"
+    ],
+    [
+      "STEM·化学·分析化学",
+      "chemistry, analytic"
+    ],
+    [
+      "STEM·化学·物理化学",
+      "chemistry, physical and theoretical"
+    ],
+    [
+      "STEM·化学·生物化学",
+      "biochemistry"
+    ],
+    [
+      "STEM·化学·高分子",
+      "plastics"
+    ],
+    [
+      "STEM·化学·胶体化学",
+      "colloids"
+    ],
+    [
+      "STEM·化学·电化学",
+      "electrochemistry"
+    ],
+    [
+      "STEM·化学·光谱学",
+      "spectrum analysis"
+    ],
+    [
+      "STEM·化学·结晶学",
+      "crystallography"
+    ],
+    [
+      "STEM·化学·化学史",
+      "chemistry history"
+    ],
+    [
+      "STEM·化学·有机合成",
+      "organic compounds synthesis"
+    ],
+    [
+      "STEM·化学·催化",
+      "catalysis"
+    ],
+    [
+      "STEM·化学·化学实验",
+      "chemistry experiments"
+    ],
+    [
+      "STEM·化学·工业化学",
+      "chemistry, technical"
+    ],
+    [
+      "STEM·生物·生物学总论",
+      "biology"
+    ],
+    [
+      "STEM·生物·植物学",
+      "botany"
+    ],
+    [
+      "STEM·生物·动物学",
+      "zoology"
+    ],
+    [
+      "STEM·生物·微生物学",
+      "microbiology"
+    ],
+    [
+      "STEM·生物·遗传学",
+      "heredity"
+    ],
+    [
+      "STEM·生物·进化论",
+      "evolution"
+    ],
+    [
+      "STEM·生物·生态学",
+      "ecology"
+    ],
+    [
+      "STEM·生物·生理学",
+      "physiology"
+    ],
+    [
+      "STEM·生物·解剖学",
+      "anatomy"
+    ],
+    [
+      "STEM·生物·组织学",
+      "histology"
+    ],
+    [
+      "STEM·生物·胚胎学",
+      "embryology"
+    ],
+    [
+      "STEM·生物·昆虫学",
+      "entomology"
+    ],
+    [
+      "STEM·生物·鸟类学",
+      "birds"
+    ],
+    [
+      "STEM·生物·海洋生物",
+      "marine biology"
+    ],
+    [
+      "STEM·生物·细胞学",
+      "cells"
+    ],
+    [
+      "STEM·生物·生物史",
+      "biology history"
+    ],
+    [
+      "STEM·天文·天文学",
+      "astronomy"
+    ],
+    [
+      "STEM·天文·天体力学",
+      "celestial mechanics"
+    ],
+    [
+      "STEM·天文·恒星",
+      "stars"
+    ],
+    [
+      "STEM·天文·行星",
+      "planets"
+    ],
+    [
+      "STEM·天文·宇宙学",
+      "cosmology"
+    ],
+    [
+      "STEM·天文·天文观测",
+      "astronomical instruments"
+    ],
+    [
+      "STEM·地球·地质学",
+      "geology"
+    ],
+    [
+      "STEM·地球·矿物学",
+      "mineralogy"
+    ],
+    [
+      "STEM·地球·岩石学",
+      "petrology"
+    ],
+    [
+      "STEM·地球·古生物学",
+      "paleontology"
+    ],
+    [
+      "STEM·地球·气象学",
+      "meteorology"
+    ],
+    [
+      "STEM·地球·地震学",
+      "seismology"
+    ],
+    [
+      "STEM·地球·海洋学",
+      "oceanography"
+    ],
+    [
+      "STEM·地球·自然地理",
+      "physical geography"
+    ],
+    [
+      "STEM·机械·机械工程",
+      "mechanical engineering"
+    ],
+    [
+      "STEM·机械·机械设计",
+      "machine design"
+    ],
+    [
+      "STEM·机械·机械学",
+      "machinery"
+    ],
+    [
+      "STEM·机械·材料力学",
+      "strength of materials"
+    ],
+    [
+      "STEM·机械·蒸汽机",
+      "steam engines"
+    ],
+    [
+      "STEM·机械·内燃机",
+      "internal combustion engines"
+    ],
+    [
+      "STEM·机械·液压",
+      "hydraulics"
+    ],
+    [
+      "STEM·机械·机床",
+      "machine-tools"
+    ],
+    [
+      "STEM·机械·铸造",
+      "foundry"
+    ],
+    [
+      "STEM·机械·锻造",
+      "forging"
+    ],
+    [
+      "STEM·机械·焊接",
+      "welding"
+    ],
+    [
+      "STEM·机械·工程制图",
+      "mechanical drawing"
+    ],
+    [
+      "STEM·机械·工业工程",
+      "industrial engineering"
+    ],
+    [
+      "STEM·机械·制造",
+      "manufactures"
+    ],
+    [
+      "STEM·机械·轴承齿轮",
+      "gearing"
+    ],
+    [
+      "STEM·机械·热机",
+      "heat-engines"
+    ],
+    [
+      "STEM·机械·泵与压缩机",
+      "pumping machinery"
+    ],
+    [
+      "STEM·机械·起重运输",
+      "hoisting machinery"
+    ],
+    [
+      "STEM·电气·电气工程",
+      "electrical engineering"
+    ],
+    [
+      "STEM·电气·电机",
+      "electric machinery"
+    ],
+    [
+      "STEM·电气·电力系统",
+      "electric power"
+    ],
+    [
+      "STEM·电气·发电",
+      "electric generators"
+    ],
+    [
+      "STEM·电气·电子学",
+      "electronics"
+    ],
+    [
+      "STEM·电气·无线电",
+      "radio"
+    ],
+    [
+      "STEM·电气·电报",
+      "telegraph"
+    ],
+    [
+      "STEM·电气·电话",
+      "telephone"
+    ],
+    [
+      "STEM·电气·电灯照明",
+      "electric lighting"
+    ],
+    [
+      "STEM·电气·电池",
+      "electric batteries"
+    ],
+    [
+      "STEM·电气·电工测量",
+      "electric measurements"
+    ],
+    [
+      "STEM·电气·变压器",
+      "electric transformers"
+    ],
+    [
+      "STEM·电气·半导体",
+      "semiconductors"
+    ],
+    [
+      "STEM·电气·控制工程",
+      "automatic control"
+    ],
+    [
+      "STEM·电气·电力传动",
+      "electric driving"
+    ],
+    [
+      "STEM·电气·电工史",
+      "electricity history"
+    ],
+    [
+      "STEM·土木·土木工程",
+      "civil engineering"
+    ],
+    [
+      "STEM·土木·结构工程",
+      "structural engineering"
+    ],
+    [
+      "STEM·土木·桥梁",
+      "bridges"
+    ],
+    [
+      "STEM·土木·道路",
+      "roads"
+    ],
+    [
+      "STEM·土木·隧道",
+      "tunnels"
+    ],
+    [
+      "STEM·土木·水利工程",
+      "hydraulic engineering"
+    ],
+    [
+      "STEM·土木·给排水",
+      "sanitary engineering"
+    ],
+    [
+      "STEM·土木·建筑材料",
+      "building materials"
+    ],
+    [
+      "STEM·土木·建筑学",
+      "architecture"
+    ],
+    [
+      "STEM·土木·建筑史",
+      "architecture history"
+    ],
+    [
+      "STEM·土木·城市规划",
+      "city planning"
+    ],
+    [
+      "STEM·土木·测量学",
+      "surveying"
+    ],
+    [
+      "STEM·土木·混凝土",
+      "concrete"
+    ],
+    [
+      "STEM·土木·基础工程",
+      "foundations"
+    ],
+    [
+      "STEM·化工·化学工程",
+      "chemical engineering"
+    ],
+    [
+      "STEM·化工·工业化学工艺",
+      "chemical technology"
+    ],
+    [
+      "STEM·化工·石油",
+      "petroleum"
+    ],
+    [
+      "STEM·化工·燃料",
+      "fuel"
+    ],
+    [
+      "STEM·化工·陶瓷",
+      "pottery"
+    ],
+    [
+      "STEM·化工·玻璃",
+      "glass"
+    ],
+    [
+      "STEM·化工·水泥",
+      "cement"
+    ],
+    [
+      "STEM·化工·造纸",
+      "paper making"
+    ],
+    [
+      "STEM·化工·橡胶",
+      "rubber"
+    ],
+    [
+      "STEM·矿冶·采矿工程",
+      "mining engineering"
+    ],
+    [
+      "STEM·矿冶·冶金学",
+      "metallurgy"
+    ],
+    [
+      "STEM·矿冶·矿物加工",
+      "ore-dressing"
+    ],
+    [
+      "STEM·航空·航空工程",
+      "aeronautics"
+    ],
+    [
+      "STEM·航空·空气动力学",
+      "aerodynamics"
+    ],
+    [
+      "STEM·航空·飞行器",
+      "airplanes"
+    ],
+    [
+      "STEM·航空·气球飞艇",
+      "balloons"
+    ],
+    [
+      "STEM·交通·船舶工程",
+      "naval architecture"
+    ],
+    [
+      "STEM·交通·造船",
+      "shipbuilding"
+    ],
+    [
+      "STEM·交通·航海",
+      "navigation"
+    ],
+    [
+      "STEM·交通·铁路",
+      "railroads"
+    ],
+    [
+      "STEM·交通·机车",
+      "locomotives"
+    ],
+    [
+      "STEM·交通·汽车",
+      "automobiles"
+    ],
+    [
+      "STEM·交通·运河",
+      "canals"
+    ],
+    [
+      "STEM·交通·交通运输",
+      "transportation"
+    ],
+    [
+      "STEM·计算机·计算机科学",
+      "computer science"
+    ],
+    [
+      "STEM·计算机·计算理论",
+      "electronic digital computers"
+    ],
+    [
+      "STEM·计算机·算法",
+      "algorithms"
+    ],
+    [
+      "STEM·计算机·编程",
+      "programming languages"
+    ],
+    [
+      "STEM·计算机·数据结构",
+      "data structures"
+    ],
+    [
+      "STEM·计算机·人工智能",
+      "artificial intelligence"
+    ],
+    [
+      "STEM·计算机·控制论",
+      "control theory"
+    ],
+    [
+      "STEM·计算机·信息论",
+      "information theory"
+    ],
+    [
+      "STEM·计算机·运筹学",
+      "operations research"
+    ],
+    [
+      "STEM·计算机·数据处理",
+      "electronic data processing"
+    ],
+    [
+      "STEM·计算机·计算机网络",
+      "computer networks"
+    ],
+    [
+      "STEM·计算机·数值计算",
+      "numerical calculations"
+    ],
+    [
+      "STEM·计算机·仿真",
+      "simulation methods"
+    ],
+    [
+      "STEM·能源·能源",
+      "power resources"
+    ],
+    [
+      "STEM·能源·蒸汽动力",
+      "steam"
+    ],
+    [
+      "STEM·能源·水力发电",
+      "water-power"
+    ],
+    [
+      "STEM·能源·风能",
+      "wind power"
+    ],
+    [
+      "STEM·能源·核能",
+      "nuclear energy"
+    ],
+    [
+      "STEM·能源·太阳能",
+      "solar energy"
+    ],
+    [
+      "STEM·能源·燃烧",
+      "combustion"
+    ],
+    [
+      "STEM·能源·燃气",
+      "gas"
+    ],
+    [
+      "STEM·能源·热电",
+      "electric power-plants"
+    ],
+    [
+      "STEM·能源·储能",
+      "storage batteries"
+    ],
+    [
+      "STEM·环境·环境工程",
+      "environmental engineering"
+    ],
+    [
+      "STEM·环境·卫生工程",
+      "public health engineering"
+    ],
+    [
+      "STEM·环境·灌溉",
+      "irrigation"
+    ],
+    [
+      "STEM·环境·排水",
+      "drainage"
+    ],
+    [
+      "STEM·环境·土壤学",
+      "soils"
+    ],
+    [
+      "STEM·环境·农业工程",
+      "agricultural engineering"
+    ],
+    [
+      "STEM·环境·农业化学",
+      "agricultural chemistry"
+    ],
+    [
+      "STEM·环境·林业",
+      "forests and forestry"
+    ],
+    [
+      "STEM·环境·渔业",
+      "fisheries"
+    ],
+    [
+      "STEM·环境·污染",
+      "pollution"
+    ],
+    [
+      "STEM·环境·水资源",
+      "water-supply"
+    ],
+    [
+      "STEM·环境·气象应用",
+      "weather"
+    ],
+    [
+      "STEM·医工·生物医学工程",
+      "biomedical engineering"
+    ],
+    [
+      "STEM·医工·医疗器械",
+      "medical instruments and apparatus"
+    ],
+    [
+      "STEM·医工·放射学",
+      "radiology"
+    ],
+    [
+      "STEM·医工·显微镜",
+      "microscope and microscopy"
+    ],
+    [
+      "STEM·医工·生物力学",
+      "biomechanics"
+    ],
+    [
+      "STEM·医工·义肢",
+      "artificial limbs"
+    ],
+    [
+      "STEM·医工·药学工艺",
+      "pharmacy"
+    ],
+    [
+      "STEM·医工·实验医学",
+      "medicine, experimental"
+    ],
+    [
+      "STEM·计量·仪器",
+      "scientific apparatus and instruments"
+    ],
+    [
+      "STEM·计量·精密测量",
+      "measurement"
+    ],
+    [
+      "STEM·计量·天平",
+      "balances"
+    ],
+    [
+      "STEM·计量·温度计",
+      "thermometers"
+    ],
+    [
+      "STEM·计量·光学仪器",
+      "optical instruments"
+    ],
+    [
+      "STEM·计量·钟表",
+      "clocks and watches"
+    ],
+    [
+      "STEM·计量·标准化",
+      "standardization"
+    ],
+    [
+      "STEM·计量·摄影术",
+      "photography"
+    ],
+    [
+      "STEM·计量·测绘仪器",
+      "surveying instruments"
+    ],
+    [
+      "STEM·工程·工程学总论",
+      "engineering"
+    ],
+    [
+      "STEM·工程·工程史",
+      "engineering history"
+    ],
+    [
+      "STEM·工程·工业与工业革命",
+      "industries"
+    ],
+    [
+      "STEM·工程·工业管理",
+      "industrial management"
+    ],
+    [
+      "STEM·工程·劳动与工艺",
+      "industrial arts"
+    ],
+    [
+      "STEM·工程·发明与专利",
+      "inventions"
+    ],
+    [
+      "STEM·工程·技术史",
+      "technology history"
+    ],
+    [
+      "STEM·工程·工程标准",
+      "engineering standards"
+    ],
+    [
+      "STEM·工程·工程经济",
+      "engineering economy"
+    ],
+    [
+      "STEM·工程·安全工程",
+      "industrial safety"
+    ],
+    [
+      "STEM·数学·微分学",
+      "differential calculus"
+    ],
+    [
+      "STEM·数学·积分学",
+      "integral calculus"
+    ],
+    [
+      "STEM·数学·偏微分方程",
+      "partial differential equations"
+    ],
+    [
+      "STEM·数学·积分方程",
+      "integral equations"
+    ],
+    [
+      "STEM·数学·微分几何",
+      "differential geometry"
+    ],
+    [
+      "STEM·数学·代数几何",
+      "algebraic geometry"
+    ],
+    [
+      "STEM·数学·群论",
+      "group theory"
+    ],
+    [
+      "STEM·数学·抽象代数",
+      "algebra, abstract"
+    ],
+    [
+      "STEM·数学·行列式",
+      "determinants"
+    ],
+    [
+      "STEM·数学·向量分析",
+      "vector analysis"
+    ],
+    [
+      "STEM·数学·四元数",
+      "quaternions"
+    ],
+    [
+      "STEM·数学·变分法",
+      "calculus of variations"
+    ],
+    [
+      "STEM·数学·傅里叶级数",
+      "fourier series"
+    ],
+    [
+      "STEM·数学·无穷级数",
+      "series, infinite"
+    ],
+    [
+      "STEM·数学·方程论",
+      "equations, theory of"
+    ],
+    [
+      "STEM·数学·逼近论",
+      "approximation theory"
+    ],
+    [
+      "STEM·数学·插值法",
+      "interpolation"
+    ],
+    [
+      "STEM·数学·最小二乘",
+      "least squares"
+    ],
+    [
+      "STEM·数学·数理逻辑",
+      "mathematical logic"
+    ],
+    [
+      "STEM·数学·图论",
+      "graph theory"
+    ],
+    [
+      "STEM·数学·流形",
+      "manifolds (mathematics)"
+    ],
+    [
+      "STEM·数学·非欧几何",
+      "geometry, non-Euclidean"
+    ],
+    [
+      "STEM·数学·复变函数",
+      "functions of complex variables"
+    ],
+    [
+      "STEM·数学·实变函数",
+      "functions of real variables"
+    ],
+    [
+      "STEM·数学·算术",
+      "arithmetic"
+    ],
+    [
+      "STEM·数学·泛函分析",
+      "functional analysis"
+    ],
+    [
+      "STEM·数学·调和分析",
+      "harmonic analysis"
+    ],
+    [
+      "STEM·数学·数值积分",
+      "numerical integration"
+    ],
+    [
+      "STEM·物理·几何光学",
+      "geometrical optics"
+    ],
+    [
+      "STEM·物理·物理光学",
+      "physical optics"
+    ],
+    [
+      "STEM·物理·电磁学",
+      "electromagnetism"
+    ],
+    [
+      "STEM·物理·气体动理论",
+      "kinetic theory of gases"
+    ],
+    [
+      "STEM·物理·动力学",
+      "dynamics"
+    ],
+    [
+      "STEM·物理·静力学",
+      "statics"
+    ],
+    [
+      "STEM·物理·流体动力学",
+      "hydrodynamics"
+    ],
+    [
+      "STEM·物理·流体静力学",
+      "hydrostatics"
+    ],
+    [
+      "STEM·物理·振动",
+      "vibration"
+    ],
+    [
+      "STEM·物理·弹性学",
+      "elasticity"
+    ],
+    [
+      "STEM·物理·声学原理",
+      "acoustics"
+    ],
+    [
+      "STEM·物理·热学",
+      "heat"
+    ],
+    [
+      "STEM·物理·热工学",
+      "heat engineering"
+    ],
+    [
+      "STEM·物理·电子",
+      "electrons"
+    ],
+    [
+      "STEM·物理·波动力学",
+      "wave mechanics"
+    ],
+    [
+      "STEM·物理·放射性",
+      "radioactivity"
+    ],
+    [
+      "STEM·物理·X射线",
+      "x-rays"
+    ],
+    [
+      "STEM·物理·辐射",
+      "radiation"
+    ],
+    [
+      "STEM·物理·毛细现象",
+      "capillarity"
+    ],
+    [
+      "STEM·物理·光谱",
+      "spectrum"
+    ],
+    [
+      "STEM·物理·物理哲学",
+      "physics philosophy"
+    ],
+    [
+      "STEM·物理·放电",
+      "electric discharges"
+    ],
+    [
+      "STEM·物理·磁学应用",
+      "magnets"
+    ],
+    [
+      "STEM·物理·物质结构",
+      "matter constitution"
+    ],
+    [
+      "STEM·化学·热化学",
+      "thermochemistry"
+    ],
+    [
+      "STEM·化学·光化学",
+      "photochemistry"
+    ],
+    [
+      "STEM·化学·立体化学",
+      "stereochemistry"
+    ],
+    [
+      "STEM·化学·化学元素",
+      "chemical elements"
+    ],
+    [
+      "STEM·化学·金属",
+      "metals"
+    ],
+    [
+      "STEM·化学·合金",
+      "alloys"
+    ],
+    [
+      "STEM·化学·氧化",
+      "oxidation"
+    ],
+    [
+      "STEM·化学·溶液",
+      "solution (chemistry)"
+    ],
+    [
+      "STEM·化学·化学反应",
+      "chemical reactions"
+    ],
+    [
+      "STEM·化学·药物化学",
+      "chemistry, medical and pharmaceutical"
+    ],
+    [
+      "STEM·化学·酸与碱",
+      "acids"
+    ],
+    [
+      "STEM·化学·盐类",
+      "salts"
+    ],
+    [
+      "STEM·化学·有机化合物",
+      "organic compounds"
+    ],
+    [
+      "STEM·化学·电解",
+      "electrolysis"
+    ],
+    [
+      "STEM·化学·化学仪器",
+      "chemical apparatus"
+    ],
+    [
+      "STEM·化学·原子",
+      "atom"
+    ],
+    [
+      "STEM·化学·分子",
+      "molecules"
+    ],
+    [
+      "STEM·化学·气体",
+      "gases"
+    ],
+    [
+      "STEM·化学·液体",
+      "liquids"
+    ],
+    [
+      "STEM·化学·结晶",
+      "crystallization"
+    ],
+    [
+      "STEM·化学·发酵化学",
+      "fermentation"
+    ],
+    [
+      "STEM·化学·化学工业分析",
+      "chemistry, industrial"
+    ],
+    [
+      "STEM·生物·植物生理",
+      "plant physiology"
+    ],
+    [
+      "STEM·生物·动物生理",
+      "animal physiology"
+    ],
+    [
+      "STEM·生物·比较解剖",
+      "anatomy, comparative"
+    ],
+    [
+      "STEM·生物·细胞学",
+      "cytology"
+    ],
+    [
+      "STEM·生物·形态学",
+      "morphology"
+    ],
+    [
+      "STEM·生物·细菌学",
+      "bacteriology"
+    ],
+    [
+      "STEM·生物·原生动物",
+      "protozoa"
+    ],
+    [
+      "STEM·生物·昆虫",
+      "insects"
+    ],
+    [
+      "STEM·生物·鱼类",
+      "fishes"
+    ],
+    [
+      "STEM·生物·博物学",
+      "natural history"
+    ],
+    [
+      "STEM·生物·遗传",
+      "genetics"
+    ],
+    [
+      "STEM·生物·生物统计",
+      "biometry"
+    ],
+    [
+      "STEM·生物·生物分类",
+      "biology classification"
+    ],
+    [
+      "STEM·生物·植物解剖",
+      "plant anatomy"
+    ],
+    [
+      "STEM·生物·寄生虫",
+      "parasites"
+    ],
+    [
+      "STEM·生物·比较生理",
+      "physiology, comparative"
+    ],
+    [
+      "STEM·生物·无脊椎动物",
+      "invertebrates"
+    ],
+    [
+      "STEM·生物·脊椎动物",
+      "vertebrates"
+    ],
+    [
+      "STEM·生物·藻类",
+      "algae"
+    ],
+    [
+      "STEM·生物·真菌",
+      "fungi"
+    ],
+    [
+      "STEM·生物·生命起源",
+      "life origin"
+    ],
+    [
+      "STEM·天文·球面天文",
+      "astronomy, spherical"
+    ],
+    [
+      "STEM·天文·天体测量",
+      "astrometry"
+    ],
+    [
+      "STEM·天文·双星",
+      "double stars"
+    ],
+    [
+      "STEM·天文·变星",
+      "variable stars"
+    ],
+    [
+      "STEM·天文·星云",
+      "nebulae"
+    ],
+    [
+      "STEM·天文·星系",
+      "galaxies"
+    ],
+    [
+      "STEM·天文·太阳",
+      "sun"
+    ],
+    [
+      "STEM·天文·月球",
+      "moon"
+    ],
+    [
+      "STEM·天文·彗星",
+      "comets"
+    ],
+    [
+      "STEM·天文·望远镜",
+      "telescopes"
+    ],
+    [
+      "STEM·天文·天文台",
+      "observatories"
+    ],
+    [
+      "STEM·天文·宇宙起源",
+      "cosmogony"
+    ],
+    [
+      "STEM·地球·经济地质",
+      "geology, economic"
+    ],
+    [
+      "STEM·地球·地球化学",
+      "geochemistry"
+    ],
+    [
+      "STEM·地球·地层学",
+      "geology, stratigraphic"
+    ],
+    [
+      "STEM·地球·火山",
+      "volcanoes"
+    ],
+    [
+      "STEM·地球·地震",
+      "earthquakes"
+    ],
+    [
+      "STEM·地球·大地测量",
+      "geodesy"
+    ],
+    [
+      "STEM·地球·地图学",
+      "cartography"
+    ],
+    [
+      "STEM·地球·气候学",
+      "climatology"
+    ],
+    [
+      "STEM·地球·大气",
+      "atmosphere"
+    ],
+    [
+      "STEM·地球·水文地理",
+      "hydrography"
+    ],
+    [
+      "STEM·地球·冰川",
+      "glaciers"
+    ],
+    [
+      "STEM·地球·河流",
+      "rivers"
+    ],
+    [
+      "STEM·地球·土壤物理",
+      "soil physics"
+    ],
+    [
+      "STEM·地球·地壳",
+      "earth crust"
+    ],
+    [
+      "STEM·机械·机工实践",
+      "machine-shop practice"
+    ],
+    [
+      "STEM·机械·锅炉",
+      "steam-boilers"
+    ],
+    [
+      "STEM·机械·燃气与油机",
+      "gas and oil engines"
+    ],
+    [
+      "STEM·机械·汽轮机",
+      "turbines"
+    ],
+    [
+      "STEM·机械·水轮",
+      "water-wheels"
+    ],
+    [
+      "STEM·机械·泵",
+      "pumps"
+    ],
+    [
+      "STEM·机械·水力机械",
+      "hydraulic machinery"
+    ],
+    [
+      "STEM·机械·起重机械",
+      "cranes, derricks, etc"
+    ],
+    [
+      "STEM·机械·轴承",
+      "bearings (machinery)"
+    ],
+    [
+      "STEM·机械·润滑",
+      "lubrication and lubricants"
+    ],
+    [
+      "STEM·机械·机构学",
+      "mechanical movements"
+    ],
+    [
+      "STEM·机械·金属加工",
+      "metal-work"
+    ],
+    [
+      "STEM·机械·模型制造",
+      "pattern-making"
+    ],
+    [
+      "STEM·机械·传动",
+      "power transmission"
+    ],
+    [
+      "STEM·机械·摩擦",
+      "friction"
+    ],
+    [
+      "STEM·机械·飞轮",
+      "flywheels"
+    ],
+    [
+      "STEM·机械·阀门",
+      "valves"
+    ],
+    [
+      "STEM·机械·机械史",
+      "mechanical engineering history"
+    ],
+    [
+      "STEM·机械·机械工业",
+      "machinery industry"
+    ],
+    [
+      "STEM·机械·制冷",
+      "refrigeration and refrigerating machinery"
+    ],
+    [
+      "STEM·机械·压缩空气",
+      "compressed air"
+    ],
+    [
+      "STEM·机械·升降机",
+      "elevators"
+    ],
+    [
+      "STEM·电气·电路",
+      "electric circuits"
+    ],
+    [
+      "STEM·电气·电流",
+      "electric current"
+    ],
+    [
+      "STEM·电气·配电",
+      "electric power distribution"
+    ],
+    [
+      "STEM·电气·输电",
+      "electric power transmission"
+    ],
+    [
+      "STEM·电气·电波",
+      "electric waves"
+    ],
+    [
+      "STEM·电气·无线电报",
+      "wireless telegraph"
+    ],
+    [
+      "STEM·电气·电动机",
+      "electric motors"
+    ],
+    [
+      "STEM·电气·电气设备",
+      "electric apparatus and appliances"
+    ],
+    [
+      "STEM·电气·电信",
+      "telecommunication"
+    ],
+    [
+      "STEM·电气·无线电工程",
+      "radio engineering"
+    ],
+    [
+      "STEM·电气·电气工业",
+      "electric industries"
+    ],
+    [
+      "STEM·电气·电热",
+      "electric heating"
+    ],
+    [
+      "STEM·电气·电工材料",
+      "electric insulators and insulation"
+    ],
+    [
+      "STEM·电气·发电机",
+      "dynamos"
+    ],
+    [
+      "STEM·电气·蓄电池",
+      "accumulators (electric)"
+    ],
+    [
+      "STEM·电气·继电器",
+      "electric relays"
+    ],
+    [
+      "STEM·电气·电镀",
+      "electroplating"
+    ],
+    [
+      "STEM·电气·电声",
+      "electroacoustics"
+    ],
+    [
+      "STEM·土木·结构分析",
+      "structural analysis (engineering)"
+    ],
+    [
+      "STEM·土木·结构理论",
+      "structures, theory of"
+    ],
+    [
+      "STEM·土木·砌体",
+      "masonry"
+    ],
+    [
+      "STEM·土木·钢筋混凝土",
+      "reinforced concrete"
+    ],
+    [
+      "STEM·土木·结构钢",
+      "steel, structural"
+    ],
+    [
+      "STEM·土木·建筑施工",
+      "building construction"
+    ],
+    [
+      "STEM·土木·土方工程",
+      "earthwork"
+    ],
+    [
+      "STEM·土木·水准测量",
+      "leveling"
+    ],
+    [
+      "STEM·土木·给水工程",
+      "water-supply engineering"
+    ],
+    [
+      "STEM·土木·污水处理",
+      "sewage disposal"
+    ],
+    [
+      "STEM·土木·船坞",
+      "docks"
+    ],
+    [
+      "STEM·土木·港口",
+      "harbors"
+    ],
+    [
+      "STEM·土木·铁路工程",
+      "railroad engineering"
+    ],
+    [
+      "STEM·土木·公共建筑",
+      "public buildings"
+    ],
+    [
+      "STEM·土木·住宅",
+      "dwellings"
+    ],
+    [
+      "STEM·土木·建筑制图",
+      "architectural drawing"
+    ],
+    [
+      "STEM·土木·木材结构",
+      "wooden structures"
+    ],
+    [
+      "STEM·土木·地基",
+      "soil mechanics"
+    ],
+    [
+      "STEM·土木·涵洞",
+      "culverts"
+    ],
+    [
+      "STEM·土木·工程造价",
+      "building estimates"
+    ],
+    [
+      "STEM·化工·硫酸",
+      "sulphuric acid"
+    ],
+    [
+      "STEM·化工·碱工业",
+      "alkali industry and trade"
+    ],
+    [
+      "STEM·化工·炼油",
+      "petroleum refining"
+    ],
+    [
+      "STEM·化工·煤焦油",
+      "coal-tar products"
+    ],
+    [
+      "STEM·化工·染料",
+      "dyes and dyeing"
+    ],
+    [
+      "STEM·化工·涂料",
+      "paint"
+    ],
+    [
+      "STEM·化工·肥皂",
+      "soap"
+    ],
+    [
+      "STEM·化工·肥料",
+      "fertilizers and manures"
+    ],
+    [
+      "STEM·化工·炸药",
+      "explosives"
+    ],
+    [
+      "STEM·化工·制糖",
+      "sugar manufacture and refining"
+    ],
+    [
+      "STEM·化工·酿造",
+      "brewing"
+    ],
+    [
+      "STEM·化工·蒸馏",
+      "distillation"
+    ],
+    [
+      "STEM·化工·纤维素",
+      "cellulose"
+    ],
+    [
+      "STEM·化工·煤气",
+      "gas manufacture and works"
+    ],
+    [
+      "STEM·化工·化工设备",
+      "chemical apparatus and plants"
+    ],
+    [
+      "STEM·化工·酸碱工业",
+      "acid industries"
+    ],
+    [
+      "STEM·化工·香料",
+      "perfumes"
+    ],
+    [
+      "STEM·化工·制革",
+      "leather"
+    ],
+    [
+      "STEM·能源·蒸汽工程",
+      "steam engineering"
+    ],
+    [
+      "STEM·能源·煤",
+      "coal"
+    ],
+    [
+      "STEM·能源·燃料油",
+      "petroleum as fuel"
+    ],
+    [
+      "STEM·能源·煤气发生炉",
+      "gas-producers"
+    ],
+    [
+      "STEM·能源·原子能",
+      "atomic power"
+    ],
+    [
+      "STEM·能源·动力",
+      "power (mechanics)"
+    ],
+    [
+      "STEM·能源·照明煤气",
+      "illuminating gas"
+    ],
+    [
+      "STEM·能源·风车",
+      "windmills"
+    ],
+    [
+      "STEM·能源·油页岩",
+      "oil-shales"
+    ],
+    [
+      "STEM·能源·地热",
+      "geothermal resources"
+    ],
+    [
+      "STEM·能源·燃料经济",
+      "fuel consumption"
+    ],
+    [
+      "STEM·能源·油井",
+      "oil wells"
+    ],
+    [
+      "STEM·能源·煤田",
+      "coal fields"
+    ],
+    [
+      "STEM·能源·电力工业",
+      "electric power industry"
+    ],
+    [
+      "STEM·环境·净水",
+      "water purification"
+    ],
+    [
+      "STEM·环境·空气污染",
+      "air pollution"
+    ],
+    [
+      "STEM·环境·消烟除尘",
+      "smoke prevention"
+    ],
+    [
+      "STEM·环境·通风",
+      "ventilation"
+    ],
+    [
+      "STEM·环境·供暖",
+      "heating"
+    ],
+    [
+      "STEM·环境·管道",
+      "plumbing"
+    ],
+    [
+      "STEM·环境·垃圾处理",
+      "refuse and refuse disposal"
+    ],
+    [
+      "STEM·环境·工业卫生",
+      "industrial hygiene"
+    ],
+    [
+      "STEM·环境·环境卫生",
+      "sanitation"
+    ],
+    [
+      "STEM·环境·防洪",
+      "flood control"
+    ],
+    [
+      "STEM·环境·河工",
+      "river engineering"
+    ],
+    [
+      "STEM·环境·水质",
+      "water quality"
+    ],
+    [
+      "STEM·环境·噪声",
+      "noise control"
+    ],
+    [
+      "STEM·环境·水土保持",
+      "soil conservation"
+    ],
+    [
+      "STEM·交通·有轨电车",
+      "street-railroads"
+    ],
+    [
+      "STEM·交通·机动车",
+      "motor vehicles"
+    ],
+    [
+      "STEM·交通·交通工程",
+      "traffic engineering"
+    ],
+    [
+      "STEM·交通·铁路车辆",
+      "railroad cars"
+    ],
+    [
+      "STEM·交通·制动",
+      "brakes"
+    ],
+    [
+      "STEM·交通·信号",
+      "signals and signaling"
+    ],
+    [
+      "STEM·交通·货运",
+      "freight and freightage"
+    ],
+    [
+      "STEM·交通·城市交通",
+      "urban transportation"
+    ],
+    [
+      "STEM·交通·内河航运",
+      "inland navigation"
+    ],
+    [
+      "STEM·交通·公路",
+      "highway engineering"
+    ],
+    [
+      "STEM·交通·桥梁设计",
+      "bridge design"
+    ],
+    [
+      "STEM·交通·驮运",
+      "transportation, automotive"
+    ],
+    [
+      "STEM·航空·飞行",
+      "flight"
+    ],
+    [
+      "STEM·航空·滑翔",
+      "gliding and soaring"
+    ],
+    [
+      "STEM·航空·火箭",
+      "rockets (aeronautics)"
+    ],
+    [
+      "STEM·航空·空中导航",
+      "air navigation"
+    ],
+    [
+      "STEM·航空·直升机",
+      "helicopters"
+    ],
+    [
+      "STEM·航空·飞艇",
+      "airships"
+    ],
+    [
+      "STEM·航空·机场",
+      "airports"
+    ],
+    [
+      "STEM·航空·风洞",
+      "wind tunnels"
+    ],
+    [
+      "STEM·航空·飞机设计",
+      "airplanes design and construction"
+    ],
+    [
+      "STEM·航空·航空发动机",
+      "airplanes motors"
+    ],
+    [
+      "STEM·交通·船舶",
+      "ships"
+    ],
+    [
+      "STEM·交通·轮机工程",
+      "marine engineering"
+    ],
+    [
+      "STEM·交通·螺旋桨",
+      "propellers"
+    ],
+    [
+      "STEM·交通·汽船航行",
+      "steam-navigation"
+    ],
+    [
+      "STEM·交通·军舰",
+      "warships"
+    ],
+    [
+      "STEM·交通·疏浚",
+      "dredging"
+    ],
+    [
+      "STEM·交通·船体",
+      "hulls (naval architecture)"
+    ],
+    [
+      "STEM·交通·船用锅炉",
+      "marine boilers"
+    ],
+    [
+      "STEM·矿冶·矿产资源",
+      "mines and mineral resources"
+    ],
+    [
+      "STEM·矿冶·煤矿",
+      "coal mines and mining"
+    ],
+    [
+      "STEM·矿冶·金矿",
+      "gold mines and mining"
+    ],
+    [
+      "STEM·矿冶·铁矿",
+      "iron mines and mining"
+    ],
+    [
+      "STEM·矿冶·熔炼",
+      "smelting"
+    ],
+    [
+      "STEM·矿冶·高炉",
+      "blast furnaces"
+    ],
+    [
+      "STEM·矿冶·炼铁",
+      "iron metallurgy"
+    ],
+    [
+      "STEM·矿冶·炼钢",
+      "steel metallurgy"
+    ],
+    [
+      "STEM·矿冶·铜",
+      "copper"
+    ],
+    [
+      "STEM·矿冶·试金术",
+      "assaying"
+    ],
+    [
+      "STEM·矿冶·采石",
+      "quarrying"
+    ],
+    [
+      "STEM·矿冶·矿业",
+      "mineral industries"
+    ],
+    [
+      "STEM·矿冶·冶金炉",
+      "furnaces"
+    ],
+    [
+      "STEM·矿冶·贵金属",
+      "precious metals"
+    ],
+    [
+      "STEM·计算机·机械计算机",
+      "calculating-machines"
+    ],
+    [
+      "STEM·计算机·数据处理",
+      "data processing"
+    ],
+    [
+      "STEM·计算机·穿孔卡",
+      "punched card systems"
+    ],
+    [
+      "STEM·计算机·自动化",
+      "automation"
+    ],
+    [
+      "STEM·计算机·程序设计",
+      "computer programming"
+    ],
+    [
+      "STEM·计算机·计算机体系结构",
+      "computer architecture"
+    ],
+    [
+      "STEM·计算机·开关理论",
+      "switching theory"
+    ],
+    [
+      "STEM·计算机·数字计算机",
+      "digital computers"
+    ],
+    [
+      "STEM·计算机·模拟计算机",
+      "analog computers"
+    ],
+    [
+      "STEM·计算机·信息检索",
+      "information storage and retrieval systems"
+    ],
+    [
+      "STEM·计算机·自动机",
+      "machine theory"
+    ],
+    [
+      "STEM·计算机·微处理器",
+      "microprocessors"
+    ],
+    [
+      "STEM·计量·统计学原理",
+      "statistics"
+    ],
+    [
+      "STEM·计量·抽样",
+      "sampling (statistics)"
+    ],
+    [
+      "STEM·计量·质量控制",
+      "quality control"
+    ],
+    [
+      "STEM·计量·工时研究",
+      "time study"
+    ],
+    [
+      "STEM·计量·生产控制",
+      "production control"
+    ],
+    [
+      "STEM·计量·人机工程",
+      "human engineering"
+    ],
+    [
+      "STEM·计量·可靠性",
+      "reliability (engineering)"
+    ],
+    [
+      "STEM·计量·误差理论",
+      "error analysis (mathematics)"
+    ],
+    [
+      "STEM·医工·医学物理",
+      "medical physics"
+    ],
+    [
+      "STEM·医工·生理仪器",
+      "physiological apparatus"
+    ],
+    [
+      "STEM·医工·假体",
+      "prosthesis"
+    ],
+    [
+      "STEM·医工·医用电子",
+      "medical electronics"
+    ],
+    [
+      "STEM·医工·验光",
+      "optometry"
+    ],
+    [
+      "STEM·医工·牙科器械",
+      "dental instruments and apparatus"
+    ],
+    [
+      "STEM·医工·外科器械",
+      "surgical instruments and apparatus"
+    ],
+    [
+      "STEM·医工·医用放射",
+      "radiotherapy"
+    ],
+    [
+      "STEM·医工·公共卫生工程",
+      "public health"
+    ],
+    [
+      "STEM·医工·消毒",
+      "disinfection"
+    ],
+    [
+      "STEM·材料·材料科学",
+      "materials"
+    ],
+    [
+      "STEM·材料·陶瓷材料",
+      "ceramics"
+    ],
+    [
+      "STEM·材料·腐蚀防护",
+      "corrosion and anti-corrosives"
+    ],
+    [
+      "STEM·材料·材料试验",
+      "materials testing"
+    ],
+    [
+      "STEM·材料·金相学",
+      "metallography"
+    ],
+    [
+      "STEM·材料·纺织纤维",
+      "textile fibers"
+    ],
+    [
+      "STEM·材料·磨料",
+      "abrasives"
+    ],
+    [
+      "STEM·材料·耐火材料",
+      "refractory materials"
+    ],
+    [
+      "STEM·材料·建筑材料测试",
+      "building materials testing"
+    ],
+    [
+      "STEM·材料·木材",
+      "wood"
+    ],
+    [
+      "STEM·土木·水坝",
+      "dams"
+    ],
+    [
+      "STEM·土木·水电",
+      "hydroelectric power"
+    ],
+    [
+      "STEM·土木·水资源开发",
+      "water resources development"
+    ],
+    [
+      "STEM·土木·灌溉工程",
+      "irrigation engineering"
+    ],
+    [
+      "STEM·土木·水泵站",
+      "pumping stations"
+    ],
+    [
+      "STEM·土木·堰闸",
+      "weirs"
+    ],
+    [
+      "STEM·土木·河道整治",
+      "river channels"
+    ],
+    [
+      "STEM·土木·水文测验",
+      "stream measurements"
+    ],
+    [
+      "STEM·环境·农业机械",
+      "agricultural machinery"
+    ],
+    [
+      "STEM·环境·耕作",
+      "plowing"
+    ],
+    [
+      "STEM·环境·农用建筑",
+      "farm buildings"
+    ],
+    [
+      "STEM·环境·农田排水",
+      "drainage, agricultural"
+    ],
+    [
+      "STEM·环境·脱粒机",
+      "threshing machines"
+    ],
+    [
+      "STEM·环境·收割机械",
+      "harvesting machinery"
+    ],
+    [
+      "STEM·环境·农机具",
+      "farm equipment"
+    ],
+    [
+      "STEM·环境·灌溉排水",
+      "irrigation farming"
+    ],
+    [
+      "STEM·地球·天气预报",
+      "weather forecasting"
+    ],
+    [
+      "STEM·地球·风暴",
+      "storms"
+    ],
+    [
+      "STEM·地球·降水",
+      "rain and rainfall"
+    ],
+    [
+      "STEM·地球·气压计",
+      "barometer"
+    ],
+    [
+      "STEM·地球·气候",
+      "climate"
+    ],
+    [
+      "STEM·地球·风",
+      "winds"
+    ],
+    [
+      "STEM·地球·气象仪器",
+      "meteorological instruments"
+    ],
+    [
+      "STEM·地球·海洋",
+      "ocean"
+    ],
+    [
+      "STEM·地球·潮汐",
+      "tides"
+    ],
+    [
+      "STEM·地球·波浪",
+      "waves"
+    ],
+    [
+      "STEM·地球·海洋气象",
+      "marine meteorology"
+    ],
+    [
+      "STEM·地球·水下探测",
+      "deep-sea sounding"
+    ],
+    [
+      "STEM·数学·球面调和",
+      "spherical harmonics"
+    ],
+    [
+      "STEM·数学·贝塞尔函数",
+      "bessel functions"
+    ],
+    [
+      "STEM·数学·椭圆函数",
+      "elliptic functions"
+    ],
+    [
+      "STEM·数学·伽马函数",
+      "gamma functions"
+    ],
+    [
+      "STEM·数学·图解计算",
+      "graphic methods"
+    ],
+    [
+      "STEM·数学·算图学",
+      "nomography"
+    ],
+    [
+      "STEM·数学·计算尺",
+      "slide-rule"
+    ],
+    [
+      "STEM·数学·数学仪器",
+      "mathematical instruments"
+    ],
+    [
+      "STEM·数学·画法几何",
+      "geometry, descriptive"
+    ],
+    [
+      "STEM·数学·透视学",
+      "perspective"
+    ],
+    [
+      "STEM·数学·投影",
+      "projection"
+    ],
+    [
+      "STEM·数学·对数",
+      "logarithms"
+    ],
+    [
+      "STEM·物理·电导",
+      "electric conductivity"
+    ],
+    [
+      "STEM·物理·热电",
+      "thermoelectricity"
+    ],
+    [
+      "STEM·物理·光电",
+      "photoelectricity"
+    ],
+    [
+      "STEM·物理·压电",
+      "piezoelectricity"
+    ],
+    [
+      "STEM·物理·磁场",
+      "magnetic fields"
+    ],
+    [
+      "STEM·物理·电场",
+      "electric fields"
+    ],
+    [
+      "STEM·物理·电磁波",
+      "electromagnetic waves"
+    ],
+    [
+      "STEM·物理·偏振光",
+      "polarization (light)"
+    ],
+    [
+      "STEM·物理·光的干涉",
+      "interference (light)"
+    ],
+    [
+      "STEM·物理·衍射",
+      "diffraction"
+    ],
+    [
+      "STEM·物理·折射",
+      "refraction"
+    ],
+    [
+      "STEM·物理·分光镜",
+      "spectroscope"
+    ],
+    [
+      "STEM·物理·颜色",
+      "color"
+    ],
+    [
+      "STEM·物理·声波",
+      "sound-waves"
+    ],
+    [
+      "STEM·物理·超声",
+      "ultrasonics"
+    ],
+    [
+      "STEM·物理·真空管",
+      "vacuum tubes"
+    ],
+    [
+      "STEM·物理·阴极射线",
+      "cathode rays"
+    ],
+    [
+      "STEM·物理·电离",
+      "ionization"
+    ],
+    [
+      "STEM·物理·宇宙射线",
+      "cosmic rays"
+    ],
+    [
+      "STEM·物理·同位素",
+      "isotopes"
+    ],
+    [
+      "STEM·物理·核裂变",
+      "nuclear fission"
+    ],
+    [
+      "STEM·化学·化学亲和力",
+      "chemical affinity"
+    ],
+    [
+      "STEM·化学·化合价",
+      "valency"
+    ],
+    [
+      "STEM·化学·分子论",
+      "molecular theory"
+    ],
+    [
+      "STEM·化学·容量分析",
+      "volumetric analysis"
+    ],
+    [
+      "STEM·化学·定量分析",
+      "chemistry, analytic quantitative"
+    ],
+    [
+      "STEM·化学·定性分析",
+      "chemistry, analytic qualitative"
+    ],
+    [
+      "STEM·化学·气体分析",
+      "gas analysis"
+    ],
+    [
+      "STEM·化学·水的分析",
+      "water analysis"
+    ],
+    [
+      "STEM·化学·烃",
+      "hydrocarbons"
+    ],
+    [
+      "STEM·化学·苯",
+      "benzene"
+    ],
+    [
+      "STEM·化学·醇",
+      "alcohol"
+    ],
+    [
+      "STEM·化学·醚",
+      "ether"
+    ],
+    [
+      "STEM·化学·氮化合物",
+      "nitrogen compounds"
+    ],
+    [
+      "STEM·化学·硫化合物",
+      "sulphur compounds"
+    ],
+    [
+      "STEM·化学·磷",
+      "phosphorus"
+    ],
+    [
+      "STEM·化学·钠",
+      "sodium"
+    ],
+    [
+      "STEM·化学·铝",
+      "aluminium"
+    ],
+    [
+      "STEM·化学·锌",
+      "zinc"
+    ],
+    [
+      "STEM·化学·铅",
+      "lead"
+    ],
+    [
+      "STEM·化学·镍",
+      "nickel"
+    ],
+    [
+      "STEM·化学·铬",
+      "chromium"
+    ],
+    [
+      "STEM·化学·钨",
+      "tungsten"
+    ],
+    [
+      "STEM·化学·稀土",
+      "rare earth metals"
+    ],
+    [
+      "STEM·化学·镭",
+      "radium"
+    ],
+    [
+      "STEM·化学·铀",
+      "uranium"
+    ],
+    [
+      "STEM·生物·植物育种",
+      "plant breeding"
+    ],
+    [
+      "STEM·生物·动物育种",
+      "livestock breeding"
+    ],
+    [
+      "STEM·生物·杂交",
+      "hybridization"
+    ],
+    [
+      "STEM·生物·变异",
+      "variation (biology)"
+    ],
+    [
+      "STEM·生物·适应",
+      "adaptation (biology)"
+    ],
+    [
+      "STEM·生物·原生质",
+      "protoplasm"
+    ],
+    [
+      "STEM·生物·染色体",
+      "chromosomes"
+    ],
+    [
+      "STEM·生物·繁殖",
+      "reproduction"
+    ],
+    [
+      "STEM·生物·再生",
+      "regeneration (biology)"
+    ],
+    [
+      "STEM·生物·共生",
+      "symbiosis"
+    ],
+    [
+      "STEM·生物·植物病害",
+      "plant diseases"
+    ],
+    [
+      "STEM·生物·经济昆虫学",
+      "insect pests"
+    ],
+    [
+      "STEM·生物·蜜蜂",
+      "bees"
+    ],
+    [
+      "STEM·生物·蚕",
+      "silkworms"
+    ],
+    [
+      "STEM·生物·家禽",
+      "poultry"
+    ],
+    [
+      "STEM·生物·牛",
+      "cattle"
+    ],
+    [
+      "STEM·天文·日食月食",
+      "solar eclipses"
+    ],
+    [
+      "STEM·天文·行星理论",
+      "planetary theory"
+    ],
+    [
+      "STEM·天文·轨道计算",
+      "orbits"
+    ],
+    [
+      "STEM·天文·天文摄影",
+      "astronomical photography"
+    ],
+    [
+      "STEM·天文·射电天文",
+      "radio astronomy"
+    ],
+    [
+      "STEM·天文·恒星时",
+      "sidereal time"
+    ],
+    [
+      "STEM·地球·鉴定矿物学",
+      "mineralogy, determinative"
+    ],
+    [
+      "STEM·地球·石油地质",
+      "petroleum geology"
+    ],
+    [
+      "STEM·地球·煤田地质",
+      "coal geology"
+    ],
+    [
+      "STEM·地球·地下水",
+      "groundwater"
+    ],
+    [
+      "STEM·地球·自流井",
+      "artesian wells"
+    ],
+    [
+      "STEM·地球·泉",
+      "springs"
+    ],
+    [
+      "STEM·地球·洞穴",
+      "caves"
+    ],
+    [
+      "STEM·地球·冰川地质",
+      "glacial geology"
+    ],
+    [
+      "STEM·地球·地磁",
+      "geomagnetism"
+    ],
+    [
+      "STEM·地球·大气电学",
+      "atmospheric electricity"
+    ],
+    [
+      "STEM·机械·车削",
+      "turning (lathe work)"
+    ],
+    [
+      "STEM·机械·铣削",
+      "milling machinery"
+    ],
+    [
+      "STEM·机械·刨削",
+      "planing machines"
+    ],
+    [
+      "STEM·机械·磨削",
+      "grinding and grinding wheels"
+    ],
+    [
+      "STEM·机械·螺纹切削",
+      "screw-cutting"
+    ],
+    [
+      "STEM·机械·齿轮加工",
+      "gear-cutting"
+    ],
+    [
+      "STEM·机械·夹具",
+      "jigs and fixtures"
+    ],
+    [
+      "STEM·机械·模具",
+      "dies and die-making"
+    ],
+    [
+      "STEM·机械·钣金",
+      "sheet-metal work"
+    ],
+    [
+      "STEM·机械·管道安装",
+      "pipe fitting"
+    ],
+    [
+      "STEM·机械·锻工",
+      "blacksmithing"
+    ],
+    [
+      "STEM·机械·钢的淬火",
+      "hardening of steel"
+    ],
+    [
+      "STEM·机械·热处理",
+      "heat treatment of steel"
+    ],
+    [
+      "STEM·机械·刀具",
+      "cutting tools"
+    ],
+    [
+      "STEM·机械·离合器",
+      "clutches"
+    ],
+    [
+      "STEM·机械·联轴器",
+      "couplings"
+    ],
+    [
+      "STEM·机械·轴系",
+      "shafting"
+    ],
+    [
+      "STEM·机械·弹簧",
+      "springs (mechanism)"
+    ],
+    [
+      "STEM·机械·凸轮",
+      "cams"
+    ],
+    [
+      "STEM·机械·连杆机构",
+      "linkages (mechanism)"
+    ],
+    [
+      "STEM·电气·布线",
+      "electric wiring"
+    ],
+    [
+      "STEM·电气·电缆",
+      "electric cables"
+    ],
+    [
+      "STEM·电气·输电线",
+      "electric lines"
+    ],
+    [
+      "STEM·电气·变电所",
+      "electric substations"
+    ],
+    [
+      "STEM·电气·开关设备",
+      "electric switchgear"
+    ],
+    [
+      "STEM·电气·熔断器",
+      "electric fuses"
+    ],
+    [
+      "STEM·电气·电灯",
+      "electric lamps"
+    ],
+    [
+      "STEM·电气·弧光灯",
+      "arc lamps"
+    ],
+    [
+      "STEM·电气·白炽灯",
+      "incandescent lamps"
+    ],
+    [
+      "STEM·电气·电炉",
+      "electric furnaces"
+    ],
+    [
+      "STEM·电气·电冶金",
+      "electrometallurgy"
+    ],
+    [
+      "STEM·电气·电力牵引",
+      "electric traction"
+    ],
+    [
+      "STEM·电气·电气化铁路",
+      "electric railroads"
+    ],
+    [
+      "STEM·电气·电报电缆",
+      "telegraph cables"
+    ],
+    [
+      "STEM·电气·天线",
+      "radio antennas"
+    ],
+    [
+      "STEM·电气·振荡器",
+      "oscillators"
+    ],
+    [
+      "STEM·电气·放大器",
+      "amplifiers"
+    ],
+    [
+      "STEM·电气·扬声器",
+      "loud-speakers"
+    ],
+    [
+      "STEM·电气·传声器",
+      "microphones"
+    ],
+    [
+      "STEM·电气·电视",
+      "television"
+    ],
+    [
+      "STEM·电气·电滤波器",
+      "electric filters"
+    ],
+    [
+      "STEM·土木·沉箱",
+      "caissons"
+    ],
+    [
+      "STEM·土木·桩基",
+      "piles and pile-driving"
+    ],
+    [
+      "STEM·土木·挡土墙",
+      "retaining walls"
+    ],
+    [
+      "STEM·土木·拱",
+      "arches"
+    ],
+    [
+      "STEM·土木·屋架",
+      "roofs"
+    ],
+    [
+      "STEM·土木·桁架",
+      "trusses"
+    ],
+    [
+      "STEM·土木·混凝土桥",
+      "bridges, concrete"
+    ],
+    [
+      "STEM·土木·钢桥",
+      "bridges, iron and steel"
+    ],
+    [
+      "STEM·土木·悬索桥",
+      "suspension bridges"
+    ],
+    [
+      "STEM·土木·桥基",
+      "bridge foundations"
+    ],
+    [
+      "STEM·土木·排水管系",
+      "drainage, house"
+    ],
+    [
+      "STEM·土木·下水道",
+      "sewerage"
+    ],
+    [
+      "STEM·土木·污水净化",
+      "sewage purification"
+    ],
+    [
+      "STEM·土木·水库",
+      "reservoirs"
+    ],
+    [
+      "STEM·土木·井",
+      "wells"
+    ],
+    [
+      "STEM·土木·渡槽",
+      "aqueducts"
+    ],
+    [
+      "STEM·土木·路面",
+      "pavements"
+    ],
+    [
+      "STEM·土木·轨道",
+      "railroad tracks"
+    ],
+    [
+      "STEM·化工·硝酸",
+      "nitric acid"
+    ],
+    [
+      "STEM·化工·盐酸",
+      "hydrochloric acid"
+    ],
+    [
+      "STEM·化工·制碱",
+      "soda industry"
+    ],
+    [
+      "STEM·化工·氯",
+      "chlorine"
+    ],
+    [
+      "STEM·化工·漂白",
+      "bleaching"
+    ],
+    [
+      "STEM·化工·淀粉",
+      "starch"
+    ],
+    [
+      "STEM·化工·葡萄糖",
+      "glucose"
+    ],
+    [
+      "STEM·化工·醋",
+      "vinegar"
+    ],
+    [
+      "STEM·化工·葡萄酒",
+      "wine and wine making"
+    ],
+    [
+      "STEM·化工·啤酒",
+      "beer"
+    ],
+    [
+      "STEM·化工·精油",
+      "essences and essential oils"
+    ],
+    [
+      "STEM·化工·树脂",
+      "resins"
+    ],
+    [
+      "STEM·化工·油漆",
+      "varnish"
+    ],
+    [
+      "STEM·化工·油墨",
+      "ink"
+    ],
+    [
+      "STEM·化工·胶粘剂",
+      "adhesives"
+    ],
+    [
+      "STEM·化工·明胶",
+      "gelatin"
+    ],
+    [
+      "STEM·化工·油脂",
+      "oils and fats"
+    ],
+    [
+      "STEM·化工·制烛",
+      "candle manufacture"
+    ],
+    [
+      "STEM·能源·汽轮机",
+      "steam-turbines"
+    ],
+    [
+      "STEM·能源·柴油机",
+      "diesel motor"
+    ],
+    [
+      "STEM·能源·燃气轮机",
+      "gas-turbines"
+    ],
+    [
+      "STEM·能源·发生炉煤气",
+      "producer gas"
+    ],
+    [
+      "STEM·能源·水煤气",
+      "water-gas"
+    ],
+    [
+      "STEM·能源·乙炔",
+      "acetylene"
+    ],
+    [
+      "STEM·能源·石油工业",
+      "petroleum industry"
+    ],
+    [
+      "STEM·能源·天然气",
+      "natural gas"
+    ],
+    [
+      "STEM·环境·水过滤",
+      "water filtration"
+    ],
+    [
+      "STEM·环境·水氯化",
+      "water chlorination"
+    ],
+    [
+      "STEM·环境·河流污染",
+      "stream pollution"
+    ],
+    [
+      "STEM·环境·工厂卫生",
+      "factory sanitation"
+    ],
+    [
+      "STEM·环境·居住卫生",
+      "housing and health"
+    ],
+    [
+      "STEM·交通·快速交通",
+      "rapid transit"
+    ],
+    [
+      "STEM·交通·公共马车",
+      "omnibuses"
+    ],
+    [
+      "STEM·交通·马车",
+      "carriages and carts"
+    ],
+    [
+      "STEM·交通·货车",
+      "wagons"
+    ],
+    [
+      "STEM·交通·自行车",
+      "bicycles"
+    ],
+    [
+      "STEM·交通·摩托车",
+      "motorcycles"
+    ],
+    [
+      "STEM·交通·卡车",
+      "motor trucks"
+    ],
+    [
+      "STEM·交通·道路材料",
+      "road materials"
+    ],
+    [
+      "STEM·交通·碎石路",
+      "macadam roads"
+    ],
+    [
+      "STEM·航空·军用航空",
+      "aeronautics, military"
+    ],
+    [
+      "STEM·航空·军用飞机",
+      "airplanes, military"
+    ],
+    [
+      "STEM·航空·水上飞机",
+      "seaplanes"
+    ],
+    [
+      "STEM·航空·降落伞",
+      "parachutes"
+    ],
+    [
+      "STEM·航空·航空仪表",
+      "aeronautical instruments"
+    ],
+    [
+      "STEM·交通·船舶推进",
+      "ship propulsion"
+    ],
+    [
+      "STEM·交通·船用发动机",
+      "marine engines"
+    ],
+    [
+      "STEM·交通·小船建造",
+      "boatbuilding"
+    ],
+    [
+      "STEM·交通·游艇",
+      "yachts"
+    ],
+    [
+      "STEM·交通·潜艇",
+      "submarines"
+    ],
+    [
+      "STEM·交通·航海术",
+      "naval art and science"
+    ],
+    [
+      "STEM·交通·罗盘",
+      "compass"
+    ],
+    [
+      "STEM·矿冶·矿井通风",
+      "mine ventilation"
+    ],
+    [
+      "STEM·矿冶·矿井支护",
+      "mine timbering"
+    ],
+    [
+      "STEM·矿冶·矿井运输",
+      "mine haulage"
+    ],
+    [
+      "STEM·矿冶·矿山测量",
+      "mine surveying"
+    ],
+    [
+      "STEM·矿冶·矿山排水",
+      "mine drainage"
+    ],
+    [
+      "STEM·矿冶·选煤",
+      "coal preparation"
+    ],
+    [
+      "STEM·矿冶·焦炭",
+      "coke"
+    ],
+    [
+      "STEM·矿冶·铁矿石",
+      "iron ores"
+    ],
+    [
+      "STEM·矿冶·铜矿石",
+      "copper ores"
+    ],
+    [
+      "STEM·矿冶·金矿石",
+      "gold ores"
+    ],
+    [
+      "STEM·矿冶·银矿石",
+      "silver ores"
+    ],
+    [
+      "STEM·矿冶·粉末冶金",
+      "powder metallurgy"
+    ],
+    [
+      "STEM·矿冶·表面硬化",
+      "case hardening"
+    ],
+    [
+      "STEM·矿冶·合金钢",
+      "steel, alloy"
+    ],
+    [
+      "STEM·计算机·逻辑机",
+      "logic machines"
+    ],
+    [
+      "STEM·计算机·开关电路",
+      "switching circuits"
+    ],
+    [
+      "STEM·计算机·存储设备",
+      "computer storage devices"
+    ],
+    [
+      "STEM·计算机·输入输出设备",
+      "computer input-output equipment"
+    ],
+    [
+      "STEM·计算机·程序设计语言",
+      "programming (electronic computers)"
+    ],
+    [
+      "STEM·计量·千分尺",
+      "micrometer"
+    ],
+    [
+      "STEM·计量·游标",
+      "verniers"
+    ],
+    [
+      "STEM·计量·量规",
+      "gages"
+    ],
+    [
+      "STEM·计量·螺纹",
+      "screw-threads"
+    ],
+    [
+      "STEM·计量·公差配合",
+      "limits and fits"
+    ],
+    [
+      "STEM·计量·互换性",
+      "interchangeable mechanisms"
+    ],
+    [
+      "STEM·医工·心电图",
+      "electrocardiography"
+    ],
+    [
+      "STEM·医工·X射线设备",
+      "x-ray apparatus"
+    ],
+    [
+      "STEM·材料·钢",
+      "steel"
+    ],
+    [
+      "STEM·材料·铸铁",
+      "cast-iron"
+    ],
+    [
+      "STEM·材料·熟铁",
+      "wrought-iron"
+    ],
+    [
+      "STEM·材料·黄铜",
+      "brass"
+    ],
+    [
+      "STEM·材料·青铜",
+      "bronze"
+    ],
+    [
+      "STEM·材料·铝合金",
+      "aluminum alloys"
+    ],
+    [
+      "STEM·材料·石灰",
+      "lime"
+    ],
+    [
+      "STEM·材料·石膏",
+      "plaster"
+    ],
+    [
+      "STEM·材料·石材",
+      "stone"
+    ],
+    [
+      "STEM·材料·砖",
+      "brick"
+    ],
+    [
+      "STEM·材料·陶土",
+      "terra-cotta"
+    ],
+    [
+      "STEM·材料·搪瓷",
+      "enamel"
+    ],
+    [
+      "STEM·材料·石棉",
+      "asbestos"
+    ],
+    [
+      "STEM·材料·云母",
+      "mica"
+    ],
+    [
+      "STEM·材料·石墨",
+      "graphite"
+    ]
+  ]
+}
