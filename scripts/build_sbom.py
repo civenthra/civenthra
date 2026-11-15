@@ -5,6 +5,7 @@ import argparse
 import hashlib
 import json
 import subprocess
+import tomllib
 import uuid
 from datetime import datetime, timezone
 from pathlib import Path
@@ -54,6 +55,7 @@ def document(*, require_clean: bool = True) -> dict:
     if require_clean:
         ensure_clean_tree()
     commit = git("rev-parse", "HEAD")
+    version = tomllib.loads((ROOT / "pyproject.toml").read_text(encoding="utf-8"))["project"]["version"]
     committed_at = datetime.fromisoformat(git("show", "-s", "--format=%cI", "HEAD"))
     created = committed_at.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     namespace = "urn:uuid:" + str(uuid.uuid5(uuid.NAMESPACE_URL, "civenthra:" + commit))
@@ -78,14 +80,14 @@ def document(*, require_clean: bool = True) -> dict:
         "spdxVersion": "SPDX-2.3",
         "dataLicense": "CC0-1.0",
         "SPDXID": "SPDXRef-DOCUMENT",
-        "name": "civenthra-local-0.1.0",
+        "name": "civenthra-local-" + version,
         "documentNamespace": namespace,
         "creationInfo": {"created": created, "creators": ["Tool: civenthra-build-sbom"]},
         "documentDescribes": ["SPDXRef-Package-Civenthra"],
         "packages": [{
             "SPDXID": "SPDXRef-Package-Civenthra",
             "name": "civenthra-local",
-            "versionInfo": "0.1.0",
+            "versionInfo": version,
             "downloadLocation": "NOASSERTION",
             "filesAnalyzed": True,
             "licenseConcluded": "Apache-2.0",
@@ -94,7 +96,7 @@ def document(*, require_clean: bool = True) -> dict:
             "externalRefs": [{
                 "referenceCategory": "PACKAGE-MANAGER",
                 "referenceType": "purl",
-                "referenceLocator": "pkg:pypi/civenthra-local@0.1.0",
+                "referenceLocator": "pkg:pypi/civenthra-local@" + version,
             }],
         }],
         "files": files,

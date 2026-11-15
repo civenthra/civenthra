@@ -42,6 +42,8 @@ def test_default_public_source_registry_is_strict_and_loadable():
         "wikisource-en", "wikisource-zh",
     }
     assert all(source["item_level_rights_review"] is True for source in registry["sources"])
+    doab = next(source for source in registry["sources"] if source["id"] == "doab")
+    assert doab["catalog_url"] == "https://directory.doabooks.org/oai/request"
     assert host_allowed("https://archive.org/item", ["archive.org"])
     assert not host_allowed("https://evil.archive.org/item", ["archive.org"])
 

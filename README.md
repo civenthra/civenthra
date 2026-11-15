@@ -92,6 +92,10 @@ supports official metadata snapshots and OAI-PMH discovery, then requires a
 territory-specific per-item rights review before any book file can enter local
 quarantine.
 
+All seven registered metadata entries have a dated [live verification record](docs/COLLECTION_LIVE_CHECK.md).
+The [historical source inventory and STEM method](docs/HISTORICAL_SOURCES.md)
+also document channels used by the original project and their current integration status.
+
 ```powershell
 python -m civenthra.collect list
 python -m civenthra.collect sync-catalog project-gutenberg `

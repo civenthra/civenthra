@@ -84,6 +84,10 @@ python -m civenthra.collect sync-catalog doab `
 默认拒绝。来源、逐项复核清单、隔离流程和十万本扩展方法见
 `docs/COLLECTION.md`。
 
+7 个已接入入口的真实联网结果见[采集验收记录](docs/COLLECTION_LIVE_CHECK.md)。
+原工程使用过的其他渠道及 STEM 专项方法见[完整历史来源清单](docs/HISTORICAL_SOURCES.md)，
+逐项标明历史证据与当前公共版的可执行适配状态。
+
 ## H3、语音与数字人边界
 
 MiniMax H3 和 WanGP 是另行安装、受独立许可约束的可选场景生成后端，
