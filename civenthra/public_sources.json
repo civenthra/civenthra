@@ -29,7 +29,7 @@
       "id": "doab",
       "name": "Directory of Open Access Books",
       "homepage": "https://www.doabooks.org/",
-      "catalog_url": "https://directory.doabooks.org/oai/",
+      "catalog_url": "https://directory.doabooks.org/oai/request",
       "adapter": "oai-pmh",
       "catalog_format": "oai_dc",
       "rights_policy_url": "https://www.doabooks.org/en/researchers/full-faq",
