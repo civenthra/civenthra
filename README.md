@@ -84,6 +84,26 @@ Local configuration, corpora, indexes, models, and outputs are excluded from
 Git. Never commit secrets, cookies, platform identifiers, reference voices, or
 portraits.
 
+## Public collection sources
+
+The optional networked collector publishes its source registry and collection
+method without publishing books, private manifests, accounts, or cookies. It
+supports official metadata snapshots and OAI-PMH discovery, then requires a
+territory-specific per-item rights review before any book file can enter local
+quarantine.
+
+```powershell
+python -m civenthra.collect list
+python -m civenthra.collect sync-catalog project-gutenberg `
+  --output E:/civenthra-staging/catalogs/pg_catalog.csv.gz
+python -m civenthra.collect sync-catalog doab `
+  --output E:/civenthra-staging/catalogs/doab.jsonl --limit 500
+```
+
+Restricted, dark, lending-only, encrypted, LCP, DRM, non-allowlisted, or
+incompletely reviewed items fail closed. See `docs/COLLECTION.md` for sources,
+the review manifest, quarantine flow, and the path toward 100,000 items.
+
 ## Optional scene generation
 
 `civenthra.scene_backend` can call a separately installed local scene generator.
@@ -143,6 +163,7 @@ Empty or corrupt media must never be cited as a working demonstration. See
 ## Community and direction
 
 - Architecture: `docs/ARCHITECTURE.md`
+- Public collection: `docs/COLLECTION.md`
 - Roadmap: `ROADMAP.md`
 - Changelog: `CHANGELOG.md`
 - Contributing: `CONTRIBUTING.md`

@@ -41,10 +41,11 @@ voice-edge = ["edge-tts>=7,<8"]
 [project.scripts]
 civenthra = "civenthra.cli:main"
 civenthra-ingest = "civenthra.ingest:main"
+civenthra-collect = "civenthra.collect:main"
 civenthra-serve = "civenthra.serve:main"
 
 [tool.setuptools.packages.find]
 include = ["civenthra*"]
 
 [tool.setuptools.package-data]
-civenthra = ["companion/*"]
+civenthra = ["companion/*", "public_sources.json"]

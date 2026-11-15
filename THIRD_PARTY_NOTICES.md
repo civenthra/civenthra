@@ -23,6 +23,16 @@ separately and must follow their original terms.
 | [llama.cpp](https://github.com/ggml-org/llama.cpp) | Optional local inference runtime | MIT | Install separately; model weights retain their own terms. |
 | Qwen-family models | Optional local language and embedding models | Model-specific terms | Do not bundle weights; record the exact model revision and license before redistribution or deployment. |
 
+## Public catalog sources
+
+`civenthra/public_sources.json` links to third-party catalog and policy
+endpoints. Those links do not make the catalog contents, books, scans,
+transcriptions, metadata, or trademarks Apache-2.0. Project Gutenberg, DOAB,
+OpenEdition, NCBI Bookshelf, Internet Archive, and Wikisource each retain their
+own terms. Catalog metadata rights, work rights, transcription rights, and
+download access are separate questions. Operators must review each item and
+territory; downloaded content stays outside this source repository.
+
 The public source distribution contains adapters only. `models/`, private media,
 book corpora and generated output are excluded by `.gitignore` and the release
 audit. Generated outputs may still contain third-party or personality rights;

@@ -8,7 +8,13 @@ synthetic fixtures. Core retrieval works without voice, avatar, or scene
 generation.
 
 ```text
-private local inputs
+official public catalogs -> metadata staging -> item rights review
+                                              |
+                                              v
+                                      quarantine + receipt
+                                              |
+                                              v
+private local inputs <---------------- human import approval
         |
         v
 ingest -> local index -> retrieve -> safety gate -> local model -> cited answer
@@ -23,6 +29,11 @@ release boundary: manifest + rights ledger + history scan + SBOM + checksums
 ## Components
 
 - `civenthra.ingest` normalizes local sources and writes rebuildable indexes.
+- `civenthra.collect` is an explicit networked process that downloads reviewed
+  metadata or content into quarantine; it never runs inside the offline answer
+  path.
+- `civenthra.sources` validates the public source registry, host allowlists,
+  access flags, territory, and per-item rights evidence.
 - `civenthra.index` provides lexical retrieval with optional local reranking.
 - `civenthra.rag` constructs evidence-grounded prompts and citations.
 - `civenthra.safety` blocks high-risk operational output without current review.

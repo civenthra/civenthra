@@ -15,7 +15,7 @@ PATTERNS = [
     re.compile(r"\b(?:sk-|gh[pousr]_)[A-Za-z0-9_-]{20,}\b"),
     re.compile(r"(?i)(?:[A-Z]:[\\/]+Users[\\/]+[^\\/\s'\"]+|/(?:home|Users)/[^/\s'\"]+)"),
 ]
-PACKAGE_TEXT_SUFFIXES = {".py"}
+PACKAGE_TEXT_SUFFIXES = {".json", ".py"}
 PACKAGE_TEXT_NAMES = {"LICENSE"}
 
 

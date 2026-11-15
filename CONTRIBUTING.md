@@ -20,3 +20,12 @@ Translations should identify the source language and review status. Machine
 translation must not be presented as a reviewed or authoritative translation.
 Security reports containing private data belong in a private advisory, not a
 public issue.
+
+## Adding a collection source
+
+A source contribution must link to the operator's official machine-readable
+catalog, rights policy, and automation policy. It must define a narrow host
+allowlist, conservative delay, item-level rights review, and fully mocked tests.
+Do not add credentials, cookies, browser profiles, login-only sources, lending
+workflows, paywall/DRM/CAPTCHA bypasses, or real downloaded books. Availability
+and “free to read” are not substitutes for a reusable license.

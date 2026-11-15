@@ -1,0 +1,137 @@
+{
+  "schema": 1,
+  "policy": {
+    "default_decision": "metadata_only_until_item_reviewed",
+    "authentication_allowed": false,
+    "restricted_access_allowed": false,
+    "notes": "A source-level listing never proves that every item may be downloaded or reused in every territory."
+  },
+  "sources": [
+    {
+      "id": "project-gutenberg",
+      "name": "Project Gutenberg",
+      "homepage": "https://www.gutenberg.org/",
+      "catalog_url": "https://www.gutenberg.org/cache/epub/feeds/pg_catalog.csv.gz",
+      "adapter": "snapshot",
+      "catalog_format": "csv.gz",
+      "rights_policy_url": "https://www.gutenberg.org/policy/license",
+      "automation_policy_url": "https://www.gutenberg.org/policy/robot_access.html",
+      "content_access": "official_bulk_or_item_files_after_review",
+      "allowed_hosts": [
+        "www.gutenberg.org",
+        "dev.gutenberg.org"
+      ],
+      "rate_limit_seconds": 2.0,
+      "item_level_rights_review": true,
+      "notes": "Use official catalogs, harvest endpoints, or mirrors; do not crawl human-facing pages."
+    },
+    {
+      "id": "doab",
+      "name": "Directory of Open Access Books",
+      "homepage": "https://www.doabooks.org/",
+      "catalog_url": "https://directory.doabooks.org/oai/",
+      "adapter": "oai-pmh",
+      "catalog_format": "oai_dc",
+      "rights_policy_url": "https://www.doabooks.org/en/researchers/full-faq",
+      "automation_policy_url": "https://www.doabooks.org/en/researchers/full-faq",
+      "content_access": "metadata_links_only_until_item_license_review",
+      "allowed_hosts": [
+        "directory.doabooks.org",
+        "www.doabooks.org"
+      ],
+      "rate_limit_seconds": 1.0,
+      "item_level_rights_review": true,
+      "notes": "DOAB supplies metadata and links. The license in each record controls reuse of the linked book."
+    },
+    {
+      "id": "openedition-books",
+      "name": "OpenEdition Books metadata",
+      "homepage": "https://books.openedition.org/",
+      "catalog_url": "https://metadata.openedition.org/oai",
+      "adapter": "oai-pmh",
+      "catalog_format": "oai_dc",
+      "rights_policy_url": "https://www.openedition.org/14043",
+      "automation_policy_url": "https://oai-openedition.readthedocs.io/en/latest/",
+      "content_access": "metadata_links_only_until_item_license_review",
+      "allowed_hosts": [
+        "metadata.openedition.org",
+        "books.openedition.org",
+        "www.openedition.org"
+      ],
+      "rate_limit_seconds": 1.0,
+      "item_level_rights_review": true,
+      "notes": "Harvest metadata through the documented OAI-PMH endpoint; verify each publication license separately."
+    },
+    {
+      "id": "ncbi-bookshelf",
+      "name": "NCBI Bookshelf",
+      "homepage": "https://www.ncbi.nlm.nih.gov/books/",
+      "catalog_url": "https://api.ncbi.nlm.nih.gov/lit/oai/books/",
+      "adapter": "oai-pmh",
+      "catalog_format": "oai_dc",
+      "rights_policy_url": "https://www.ncbi.nlm.nih.gov/books/about/copyright/",
+      "automation_policy_url": "https://www.ncbi.nlm.nih.gov/sites/books/about/oai/",
+      "content_access": "metadata_and_subset_fulltext_after_item_review",
+      "allowed_hosts": [
+        "api.ncbi.nlm.nih.gov",
+        "www.ncbi.nlm.nih.gov"
+      ],
+      "rate_limit_seconds": 1.0,
+      "item_level_rights_review": true,
+      "notes": "The OAI service exposes all metadata and full text only for a subset. Check the rights notice for every item."
+    },
+    {
+      "id": "internet-archive-public",
+      "name": "Internet Archive public items",
+      "homepage": "https://archive.org/",
+      "catalog_url": "https://archive.org/advancedsearch.php?q=mediatype%3Atexts&fl%5B%5D=identifier%2Ctitle%2Ccreator%2Clanguage%2Clicenseurl%2Ccollection&rows=50&page=1&output=json",
+      "adapter": "snapshot",
+      "catalog_format": "json",
+      "rights_policy_url": "https://archive.org/about/terms.php",
+      "automation_policy_url": "https://archive.org/developers/",
+      "content_access": "public_files_only_after_item_rights_and_access_review",
+      "allowed_hosts": [
+        "archive.org"
+      ],
+      "rate_limit_seconds": 2.0,
+      "item_level_rights_review": true,
+      "notes": "Reject dark, access-restricted, lending-only, print-disabled, encrypted, LCP, or DRM files. Availability is not a license."
+    },
+    {
+      "id": "wikisource-en",
+      "name": "English Wikisource dumps",
+      "homepage": "https://en.wikisource.org/",
+      "catalog_url": "https://dumps.wikimedia.org/enwikisource/latest/dumpstatus.json",
+      "adapter": "snapshot",
+      "catalog_format": "json",
+      "rights_policy_url": "https://en.wikisource.org/wiki/Wikisource:Reusing_Wikisource_content",
+      "automation_policy_url": "https://meta.wikimedia.org/wiki/Data_dumps/What%27s_available_for_download",
+      "content_access": "official_dump_after_work_and_contribution_license_review",
+      "allowed_hosts": [
+        "dumps.wikimedia.org",
+        "en.wikisource.org"
+      ],
+      "rate_limit_seconds": 1.0,
+      "item_level_rights_review": true,
+      "notes": "A dump contains many works and community contributions with different rights facts; review before reuse."
+    },
+    {
+      "id": "wikisource-zh",
+      "name": "Chinese Wikisource dumps",
+      "homepage": "https://zh.wikisource.org/",
+      "catalog_url": "https://dumps.wikimedia.org/zhwikisource/latest/dumpstatus.json",
+      "adapter": "snapshot",
+      "catalog_format": "json",
+      "rights_policy_url": "https://zh.wikisource.org/wiki/Wikisource:%E7%89%88%E6%9D%83%E4%BF%A1%E6%81%AF",
+      "automation_policy_url": "https://meta.wikimedia.org/wiki/Data_dumps/What%27s_available_for_download",
+      "content_access": "official_dump_after_work_and_contribution_license_review",
+      "allowed_hosts": [
+        "dumps.wikimedia.org",
+        "zh.wikisource.org"
+      ],
+      "rate_limit_seconds": 1.0,
+      "item_level_rights_review": true,
+      "notes": "Use official dumps instead of page crawling and retain the required attribution and license evidence."
+    }
+  ]
+}
