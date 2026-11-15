@@ -2,6 +2,7 @@ import hashlib
 import importlib.util
 import json
 import re
+import tomllib
 from pathlib import Path
 
 import pytest
@@ -31,6 +32,12 @@ def test_sbom_covers_exact_release_manifest():
     assert sbom["spdxVersion"] == "SPDX-2.3"
     assert files == manifest_paths()
     assert len(sbom["relationships"]) == len(files)
+    version = tomllib.loads((ROOT / "pyproject.toml").read_text(encoding="utf-8"))["project"]["version"]
+    from civenthra import __version__
+    assert __version__ == version
+    assert sbom["packages"][0]["versionInfo"] == version
+    assert sbom["packages"][0]["externalRefs"][0]["referenceLocator"].endswith("@" + version)
+    assert "version: " + version in (ROOT / "CITATION.cff").read_text(encoding="utf-8")
 
 
 def test_sbom_refuses_to_mix_head_identity_with_dirty_files(monkeypatch):
