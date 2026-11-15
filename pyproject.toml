@@ -27,7 +27,7 @@ Issues = "https://github.com/civenthra/civenthra/issues"
 Source = "https://github.com/civenthra/civenthra"
 
 [project.optional-dependencies]
-test = ["pytest==9.1.1"]
+test = ["pytest==9.2.0"]
 voice = [
   "fastapi>=0.115,<1",
   "faster-whisper>=1.1,<2",
