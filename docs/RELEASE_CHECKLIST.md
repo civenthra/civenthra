@@ -4,7 +4,7 @@
 
 - [ ] Release branch is an orphan branch with exactly one root commit.
 - [ ] Root commit uses the public maintainer identity, not a workstation identity.
-- [ ] `git rev-list --max-parents=0 HEAD` returns exactly `HEAD`.
+- [ ] `git rev-list --max-parents=0 HEAD` returns exactly one root commit.
 - [ ] No development branch or tag is configured for push.
 - [ ] Repository name, URLs, package name, CLI, and bilingual docs use Civenthra.
 
