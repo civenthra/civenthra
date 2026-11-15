@@ -22,6 +22,8 @@ dist/
 !.env.example
 config.local.json
 authorizations.local.json
+collection-manifest.local.json
+reviewed-items*.json
 *.pem
 *.key
 *cookie*.json
@@ -49,6 +51,8 @@ credentials*.json
 /corpus/
 /out/
 /outputs/
+/quarantine/
+/staging/
 /.omx/
 /models/
 *.gguf
@@ -85,6 +89,7 @@ credentials*.json
 !/docs/SAFETY_MODEL.md
 !/docs/ARCHITECTURE.md
 !/docs/RELEASE_CHECKLIST.md
+!/docs/COLLECTION.md
 /examples/**
 !/examples/synthetic_corpus.json
 !/examples/synthetic_demo.py
@@ -115,6 +120,8 @@ credentials*.json
 !/tests/test_synthetic_demo.py
 !/tests/test_safe_index.py
 !/tests/test_voice.py
+!/tests/test_sources.py
+!/tests/test_collect.py
 
 # Platform receipts and local browser/account evidence must never be committed.
 **/publish_receipt.json

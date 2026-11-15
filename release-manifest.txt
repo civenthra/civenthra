@@ -26,6 +26,7 @@ CONTRIBUTING.md
 CONTRIBUTING.zh-CN.md
 CODE_OF_CONDUCT.md
 docs/ARCHITECTURE.md
+docs/COLLECTION.md
 docs/OPEN_SOURCE_READINESS.md
 docs/RELEASE_CHECKLIST.md
 docs/SAFETY_MODEL.md
@@ -35,6 +36,7 @@ civenthra/__init__.py
 civenthra/airgap.py
 civenthra/authorizations.py
 civenthra/cli.py
+civenthra/collect.py
 civenthra/companion/LICENSE
 civenthra/config.py
 civenthra/demo.py
@@ -48,10 +50,12 @@ civenthra/i18n.py
 civenthra/llm.py
 civenthra/local_api.py
 civenthra/obsidian.py
+civenthra/public_sources.json
 civenthra/rag.py
 civenthra/safety.py
 civenthra/scene_backend.py
 civenthra/serve.py
+civenthra/sources.py
 civenthra/textutil.py
 civenthra/voice.py
 LICENSE
@@ -82,6 +86,7 @@ tests/test_airgap.py
 tests/test_authorizations.py
 tests/test_archive_audit.py
 tests/test_backend_identity.py
+tests/test_collect.py
 tests/test_graph.py
 tests/test_i18n.py
 tests/test_local_api_security.py
@@ -93,6 +98,7 @@ tests/test_safety.py
 tests/test_synthetic_demo.py
 tests/test_safe_index.py
 tests/test_scene_backend.py
+tests/test_sources.py
 tests/test_voice_consent.py
 tests/test_voice.py
 THIRD_PARTY_NOTICES.md

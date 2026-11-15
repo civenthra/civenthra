@@ -17,6 +17,8 @@ feature count.
   collection diagnostics without distributing source books.
 - Define a rights-safe “one minute to understand a discipline” authoring format
   using original, public-domain, or explicitly licensed inputs.
+- Exercise the public catalog and quarantine collector at 1,000 and 10,000
+  reviewed-item gates before designing sharded 100,000-item indexing.
 - Add deterministic fallbacks when optional H3, avatar, or voice components are
   absent.
 
@@ -31,7 +33,9 @@ feature count.
 
 ## Non-goals for the current release / 当前版本非目标
 
-- Distributing the planned 100,000-book private collection or its translations.
+- Distributing the planned 100,000-book private collection or its translations;
+  the source registry and acquisition method are public, while content remains
+  separately licensed and locally reviewed.
 - Claiming flight, medical, rescue, life-support, or autonomous operational
   certification.
 - Relicensing third-party models, voices, portraits, or generated outputs as

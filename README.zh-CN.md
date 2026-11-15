@@ -66,6 +66,24 @@ python -m civenthra.cli --lang auto
 本地配置、语料、索引、模型和输出均不进入 Git。不得提交密钥、Cookie、
 平台账号标识、参考声音或肖像。
 
+## 公开采集源
+
+可选联网采集器公开来源注册表和完整采集方法，但不公开图书正文、私人复核清单、
+账号或Cookie。它支持官方元数据快照与OAI-PMH书目发现；任何图书文件下载前，
+都必须完成适用地域下的逐项权利复核，并且只能进入本地隔离目录。
+
+```powershell
+python -m civenthra.collect list
+python -m civenthra.collect sync-catalog project-gutenberg `
+  --output E:/civenthra-staging/catalogs/pg_catalog.csv.gz
+python -m civenthra.collect sync-catalog doab `
+  --output E:/civenthra-staging/catalogs/doab.jsonl --limit 500
+```
+
+受限、暗藏、借阅限定、加密、LCP、DRM、非白名单主机或复核信息不完整的条目
+默认拒绝。来源、逐项复核清单、隔离流程和十万本扩展方法见
+`docs/COLLECTION.md`。
+
 ## H3、语音与数字人边界
 
 MiniMax H3 和 WanGP 是另行安装、受独立许可约束的可选场景生成后端，
@@ -108,6 +126,7 @@ python scripts/build_sbom.py --output out/civenthra.spdx.json
 ## 社区与方向
 
 - 架构：`docs/ARCHITECTURE.md`
+- 公开采集：`docs/COLLECTION.md`
 - 路线图：`ROADMAP.md`
 - 变更记录：`CHANGELOG.md`
 - 参与贡献：`CONTRIBUTING.zh-CN.md`

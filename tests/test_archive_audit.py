@@ -20,6 +20,7 @@ def wheel(tmp_path, members):
 def test_safe_wheel_passes(tmp_path):
     path = wheel(tmp_path, {
         "civenthra/__init__.py": "VERSION = 'test'\n",
+        "civenthra/public_sources.json": '{"schema": 1}\n',
         "civenthra_local-0.1.dist-info/METADATA": "Name: civenthra-local\n",
     })
     assert audit.findings(path) == []
