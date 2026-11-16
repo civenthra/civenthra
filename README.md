@@ -15,6 +15,89 @@ This repository contains source code, tests, synthetic examples, and safety
 boundaries. It does **not** distribute books, translations, model weights,
 indexes, voices, portraits, account data, or generated media.
 
+## Start collecting catalogs and books
+
+You can start collection from this page. The collector runs on your computer
+with Python 3.11 or newer; catalog collection does not require a model,
+llama.cpp, or local answer-service configuration. The current interface is a
+command line.
+
+### 1. Download and install
+
+On Windows, open PowerShell and run:
+
+```powershell
+git clone https://github.com/civenthra/civenthra.git
+cd civenthra
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install --no-deps .
+```
+
+Without Git, use **Code → Download ZIP** on this page, extract the archive, and
+open PowerShell in the extracted folder containing `pyproject.toml`. Then run
+the last two commands above. Explicitly calling the environment's Python avoids
+needing to activate PowerShell scripts. On macOS/Linux, create the environment
+with `python3 -m venv .venv` and replace `.\.venv\Scripts\python.exe` below with
+`.venv/bin/python`.
+
+### 2. List sources and collect a small catalog sample
+
+Run these commands from the project folder:
+
+```powershell
+# Display the seven executable metadata entries.
+.\.venv\Scripts\python.exe -m civenthra.collect list
+
+# Save three DOAB metadata records and their SHA-256 receipt.
+.\.venv\Scripts\python.exe -m civenthra.collect sync-catalog doab --output ./staging/catalogs/doab-sample.jsonl --limit 3 --max-pages 1
+
+# Download Gutenberg's complete official compressed catalog.
+.\.venv\Scripts\python.exe -m civenthra.collect sync-catalog project-gutenberg --output ./staging/catalogs/pg_catalog.csv.gz --max-bytes 33554432
+```
+
+The outputs are catalogs/metadata, not book text. Each has a companion
+`.receipt.json` file. If an output already exists, choose a new filename;
+catalog synchronization refuses to overwrite previous evidence.
+
+| Source entry | Current automatic output |
+| --- | --- |
+| Project Gutenberg | Official complete catalog snapshot |
+| DOAB | Book/chapter metadata and links |
+| OpenEdition Books | Metadata from the `books` set, including chapters |
+| NCBI Bookshelf | `nbk_meta` metadata; full text is available only for a subset |
+| Internet Archive | First search-page metadata snapshot; each result still needs access review |
+| English Wikisource | Official dump-file checksum manifest |
+| Chinese Wikisource | Official dump-file checksum manifest |
+
+### 3. Download reviewed book files
+
+Select the exact edition and publicly accessible file. Create a private
+`reviewed-items.local.json` using the **Reviewed manifest** example in the
+[collection guide](docs/COLLECTION.md). Fill in its source/item IDs, download
+URL, filename, access flags, territory and rights evidence. The download host
+must be allowed by that source. Then run:
+
+```powershell
+.\.venv\Scripts\python.exe -m civenthra.collect fetch ./reviewed-items.local.json --staging-dir ./quarantine
+```
+
+Successful downloads go under `quarantine/<source_id>/<item_id>/`, with SHA-256
+receipts. Check title, author, edition, completeness and file quality before
+importing into your library. Catalog-only entries do not automatically resolve
+all publisher files, parse Wikimedia dumps into individual books, or provide a
+one-click whole-library download.
+
+### Source coverage, STEM and capacity
+
+- [Detailed collection guide and manifest example](docs/COLLECTION.md)
+- [Seven-source live verification results](docs/COLLECTION_LIVE_CHECK.md)
+- [68 historical source/service records and methods](docs/HISTORICAL_SOURCES.md):
+  historical registration or probing is separate from current executable support.
+- [All 803 STEM seed pairs](docs/stem_seeds.json): query topics, not 803 books.
+- [Source-capacity and subject-distribution supplement](https://github.com/civenthra/civenthra/releases/tag/v0.2.0):
+  dated Word, PDF, Markdown and JSON attachments. Counts use different units and
+  overlap; no cross-source distinct-book total has been established.
+
 ## Current boundaries
 
 - This is a research and education prototype, not a certified aerospace,
@@ -84,30 +167,6 @@ Local configuration, corpora, indexes, models, and outputs are excluded from
 Git. Never commit secrets, cookies, platform identifiers, reference voices, or
 portraits.
 
-## Public collection sources
-
-The optional networked collector publishes its source registry and collection
-method without publishing books, private manifests, accounts, or cookies. It
-supports official metadata snapshots and OAI-PMH discovery, then requires a
-territory-specific per-item rights review before any book file can enter local
-quarantine.
-
-All seven registered metadata entries have a dated [live verification record](docs/COLLECTION_LIVE_CHECK.md).
-The [historical source inventory and STEM method](docs/HISTORICAL_SOURCES.md)
-also document channels used by the original project and their current integration status.
-
-```powershell
-python -m civenthra.collect list
-python -m civenthra.collect sync-catalog project-gutenberg `
-  --output E:/civenthra-staging/catalogs/pg_catalog.csv.gz
-python -m civenthra.collect sync-catalog doab `
-  --output E:/civenthra-staging/catalogs/doab.jsonl --limit 500
-```
-
-Restricted, dark, lending-only, encrypted, LCP, DRM, non-allowlisted, or
-incompletely reviewed items fail closed. See `docs/COLLECTION.md` for sources,
-the review manifest, quarantine flow, and the path toward 100,000 items.
-
 ## Optional scene generation
 
 `civenthra.scene_backend` can call a separately installed local scene generator.
@@ -167,7 +226,8 @@ Empty or corrupt media must never be cited as a working demonstration. See
 ## Community and direction
 
 - Architecture: `docs/ARCHITECTURE.md`
-- Public collection: `docs/COLLECTION.md`
+- Public collection: [homepage quick start](#start-collecting-catalogs-and-books)
+  and [complete guide](docs/COLLECTION.md)
 - Roadmap: `ROADMAP.md`
 - Changelog: `CHANGELOG.md`
 - Contributing: `CONTRIBUTING.md`
