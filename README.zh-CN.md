@@ -13,6 +13,81 @@
 本仓库公开程序、测试、合成示例和安全边界，不包含书籍正文、译文、模型
 权重、索引、声音、肖像、账号数据或生成媒体。
 
+## 开始采集书目与图书
+
+从本页即可开始采集。需要 Python 3.11 或更新版本；只采集目录时，无需配置
+模型、llama.cpp 或离线问答服务。当前通过命令行操作。
+
+### 1. 下载并安装
+
+Windows 打开 PowerShell，依次运行：
+
+```powershell
+git clone https://github.com/civenthra/civenthra.git
+cd civenthra
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install --no-deps .
+```
+
+如果没有 Git，点击本页 **Code → Download ZIP**，解压后在包含 `pyproject.toml`
+的文件夹打开 PowerShell，再运行上面最后两条命令。直接调用虚拟环境中的 Python，
+无需执行环境激活脚本。macOS/Linux 使用 `python3 -m venv .venv` 创建环境，
+并将后续命令中的 `.\.venv\Scripts\python.exe` 替换为 `.venv/bin/python`。
+
+### 2. 查看来源并采集一小批书目
+
+在项目文件夹内运行：
+
+```powershell
+# 列出当前可执行的 7 个元数据入口。
+.\.venv\Scripts\python.exe -m civenthra.collect list
+
+# 获取 3 条 DOAB 元数据，并保存 SHA-256 回执。
+.\.venv\Scripts\python.exe -m civenthra.collect sync-catalog doab --output ./staging/catalogs/doab-sample.jsonl --limit 3 --max-pages 1
+
+# 下载 Gutenberg 的完整官方压缩目录。
+.\.venv\Scripts\python.exe -m civenthra.collect sync-catalog project-gutenberg --output ./staging/catalogs/pg_catalog.csv.gz --max-bytes 33554432
+```
+
+这些输出是目录或元数据，尚不是书籍正文；每份输出附有 `.receipt.json` 回执。
+如果目标文件已存在，请换用新文件名，目录同步不会覆盖历史输出。
+
+| 采集入口 | 当前可自动获取的内容 |
+| --- | --- |
+| Project Gutenberg | 完整官方目录快照 |
+| DOAB | 图书／章节元数据及链接 |
+| OpenEdition Books | `books` 集合元数据，含章节 |
+| NCBI Bookshelf | `nbk_meta` 元数据；只有部分条目提供全文 |
+| Internet Archive | 搜索第一页元数据快照；每条仍需复核访问条件 |
+| 英文 Wikisource | 官方转储文件的校验和清单 |
+| 中文 Wikisource | 官方转储文件的校验和清单 |
+
+### 3. 下载已复核的图书文件
+
+先确认具体版本及可公开访问的文件，按照[完整采集指南](docs/COLLECTION.md)中
+“逐项复核清单”的示例，在本地创建 `reviewed-items.local.json`。填写来源及条目
+标识、下载地址、文件名、访问标志、适用地域和权利依据；下载主机必须在对应来源
+白名单内。完成后运行：
+
+```powershell
+.\.venv\Scripts\python.exe -m civenthra.collect fetch ./reviewed-items.local.json --staging-dir ./quarantine
+```
+
+下载成功后，文件进入 `quarantine/<source_id>/<item_id>/`，并附 SHA-256 回执。
+核对书名、作者、版本、完整性及文件质量后，再导入自己的书库。目录入口目前不会
+自动解析全部出版社正文链接、将维基转储拆成逐本图书，或一键下载整个书库。
+
+### 来源范围、STEM 与容量
+
+- [完整操作指南及复核清单示例](docs/COLLECTION.md)
+- [7 个入口的真实联网验收记录](docs/COLLECTION_LIVE_CHECK.md)
+- [68 条历史来源服务记录与方法](docs/HISTORICAL_SOURCES.md)：
+  逐项区分历史注册、探测和当前公共版可执行支持。
+- [全部 803 条 STEM 种子](docs/stem_seeds.json)：这是检索主题，不是 803 本书。
+- [来源容量与学科分布附件](https://github.com/civenthra/civenthra/releases/tag/v0.2.0)：
+  提供注明日期的 Word、PDF、Markdown 和 JSON；不同平台统计口径不同且存在重叠，
+  尚未建立跨源去重图书总量。
+
 ## 当前边界
 
 - 这是研究和教育原型，不是航天、医疗、心理、救援或设备操作认证系统。
@@ -66,28 +141,6 @@ python -m civenthra.cli --lang auto
 本地配置、语料、索引、模型和输出均不进入 Git。不得提交密钥、Cookie、
 平台账号标识、参考声音或肖像。
 
-## 公开采集源
-
-可选联网采集器公开来源注册表和完整采集方法，但不公开图书正文、私人复核清单、
-账号或Cookie。它支持官方元数据快照与OAI-PMH书目发现；任何图书文件下载前，
-都必须完成适用地域下的逐项权利复核，并且只能进入本地隔离目录。
-
-```powershell
-python -m civenthra.collect list
-python -m civenthra.collect sync-catalog project-gutenberg `
-  --output E:/civenthra-staging/catalogs/pg_catalog.csv.gz
-python -m civenthra.collect sync-catalog doab `
-  --output E:/civenthra-staging/catalogs/doab.jsonl --limit 500
-```
-
-受限、暗藏、借阅限定、加密、LCP、DRM、非白名单主机或复核信息不完整的条目
-默认拒绝。来源、逐项复核清单、隔离流程和十万本扩展方法见
-`docs/COLLECTION.md`。
-
-7 个已接入入口的真实联网结果见[采集验收记录](docs/COLLECTION_LIVE_CHECK.md)。
-原工程使用过的其他渠道及 STEM 专项方法见[完整历史来源清单](docs/HISTORICAL_SOURCES.md)，
-逐项标明历史证据与当前公共版的可执行适配状态。
-
 ## H3、语音与数字人边界
 
 MiniMax H3 和 WanGP 是另行安装、受独立许可约束的可选场景生成后端，
@@ -130,7 +183,7 @@ python scripts/build_sbom.py --output out/civenthra.spdx.json
 ## 社区与方向
 
 - 架构：`docs/ARCHITECTURE.md`
-- 公开采集：`docs/COLLECTION.md`
+- 公开采集：[首页快速上手](#开始采集书目与图书)及[完整操作指南](docs/COLLECTION.md)
 - 路线图：`ROADMAP.md`
 - 变更记录：`CHANGELOG.md`
 - 参与贡献：`CONTRIBUTING.zh-CN.md`
