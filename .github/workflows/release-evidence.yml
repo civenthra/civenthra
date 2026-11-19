@@ -37,7 +37,7 @@ jobs:
           python scripts/audit_archive.py dist/*.whl
           python scripts/build_sbom.py --output dist/civenthra.spdx.json
           python scripts/build_checksums.py --output dist/SHA256SUMS "dist/*.whl" dist/civenthra.spdx.json
-      - uses: actions/attest-build-provenance@43d14bc2b83dec42d39ecae14e916627a18bb661 # v3
+      - uses: actions/attest-build-provenance@977bb373ede98d70efdf65b84cb5f73e068dcc2a # v3
         with:
           subject-path: dist/*
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
